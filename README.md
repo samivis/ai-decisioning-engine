@@ -21,18 +21,27 @@ Who feels this: credit risk leadership sponsors the model and the new population
 Two structural assumptions drive this framing:
 
 - **Assumption 1: compliance sign-off, not model quality, gates underwriting launches.** Any change to what feeds a lending decision (a new data source, an adjusted policy, a new underwriting program) reopens the decline-reason question: which scenarios can newly decline someone, and what approved language covers each. That work runs through enumeration, legal wording review, and cross-team coordination, and it compounds on the launch's critical path. The enforcement record is what makes skipping it expensive [5][6]. This matches how I saw launches actually gate, and the project bets it generalizes across regulated lenders.
-- **Assumption 2: the rule-layer version of this mapping is tractable by hand; the model-layer version is a different kind of problem.** Rules have enumerable decline scenarios, so a person can map them to reasons and route the result through sign-off. A model weighing many features into one score does not enumerate. The industry's mechanism for the model side is attribution-derived reason codes [7][8], and the step where attributions become the stated reasons is exactly what the FinRegLab study did not evaluate [9]. This project builds that step in the open.
+- **Assumption 2: the rule-layer version of this mapping is tractable by hand; the model-layer version is a different kind of problem.** Rules have enumerable decline scenarios, so a person can map them to reasons and route the result through sign-off. A model weighing many features into one score does not enumerate; the translation step it needs instead is the ungoverned gap described above, and this project builds that step in the open.
 - **Reconstruction demand already exists.** Examinations and disputes sample past decisions and expect the specific reason and the mechanism behind it; Reg B requires 25 months of record retention [3] and SR 11-7 expects documentation sufficient for independent review [4]. Even in static systems, answering is manual archaeology across compliance, engineering, and product. The snapshot-and-replay design makes the archaeology a query.
 
 ## Why now
 
-Three shifts converge:
+Two shifts collide with the regulatory floor above:
 
-1. **Models are displacing rules in the decision itself.** The mapping problem changes in kind, not degree: "which data caused this decline" stops being enumerable (Assumption 2).
-2. **Model change velocity is colliding with review cadence.** Upstart asked the CFPB to terminate its own no-action letter in 2022 because it wanted to change model variables faster than the review process allowed [10]. That tension between retraining speed and compliance review is exactly where reproducibility breaks.
-3. **Regulators have pre-committed.** The circulars [1][2] were issued before most of this tooling matured; the floor is set and enforcement precedent exists [5][6].
+1. **Models are displacing rules in the decision itself**, so the tractable, enumerable mapping work becomes the different kind of problem in Assumption 2.
+2. **Model change velocity is outrunning review cadence.** Upstart asked the CFPB to terminate its own no-action letter in 2022 because it wanted to change model variables faster than the review process allowed [10]. Retraining speed versus compliance review is exactly where reproducibility breaks.
 
-One more assumption, stated as the design bet it is: **Assumption 3: exact reproducibility will be expected of model-driven decisioning.** The demand side already exists in static systems: audits sample past declines and expect the exact reason and mechanism (see the observed note above), Reg B requires 25 months of record retention [3], and SR 11-7 expects documentation sufficient for independent review [4]. The bet is about the supply side: once the deciding logic retrains weekly, answering an audit stops being hard and becomes impossible without decision snapshots. No public enforcement action yet turns on retraining-induced irreproducibility; this project bets that is a matter of time.
+Which sets up the design bet: **Assumption 3: exact reproducibility will be expected of model-driven decisioning.** The demand side already exists (reconstruction, retention, and review expectations above); the bet is about supply. Once the deciding logic retrains weekly, answering a dispute or exam becomes impossible without decision snapshots. No public enforcement action yet turns on retraining-induced irreproducibility; this project bets that is a matter of time.
+
+## Proposed impact
+
+If the hypothesis is right, the payoff is launch velocity and dispute posture, measurable as:
+
+- **Time to approve a new population:** days from model-ready to compliance-signed reason set. This is the metric the contract layer attacks; done manually this is the critical path (Assumption 1).
+- **Reason-code coverage rate:** share of declines with a complete mapped reason set. Anything under 100% is a launch blocker, which is why the unmappable-decline path throws instead of logging.
+- **Dispute replay fidelity:** verify-mode pass rate across model retrains. The only acceptable number is 100%.
+- **Notice validation failure rate:** how often governed generation falls back to templates; a rising rate means vocabulary and model drifted apart.
+- **Per-population decline reason distribution:** the early-warning input for fair-lending review.
 
 ## The proposed solution
 
@@ -76,16 +85,6 @@ Two supporting choices worth their own note:
 
 - **Reasons follow the inputs, not the applicant.** The organizing principle is that valid decline reasons are determined by which data actually went into the decision. A thin-file applicant naturally supplies different inputs (no bureau history, shorter deposit records), so different reasons can validly fire for them; the "population" routing in this engine is how that input difference gets operationalized, not a claim that people should get categorically different vocabularies. Same principle, stricter form: the model uses only features derivable from the applicant's own cash-flow data (no bureau-only features), so no reason can ever cite an input the applicant never supplied.
 - **The LLM is caged, deliberately.** The demo contrasts a naive notice (LLM explains raw features: fluent, unapproved, different every run) with a governed one (LLM fills constrained slots from approved code text, validated by exact match, template fallback on any failure). The point is to show where generative AI fits in a regulated flow and where it does not. See `docs/adr-002-templated-notice.md`.
-
-## Proposed impact
-
-If the hypothesis is right, the payoff is launch velocity and dispute posture, measurable as:
-
-- **Time to approve a new population:** days from model-ready to compliance-signed reason set. This is the metric the contract layer attacks; done manually this is the critical path (Assumption 1).
-- **Reason-code coverage rate:** share of declines with a complete mapped reason set. Anything under 100% is a launch blocker, which is why the unmappable-decline path throws instead of logging.
-- **Dispute replay fidelity:** verify-mode pass rate across model retrains. The only acceptable number is 100%.
-- **Notice validation failure rate:** how often governed generation falls back to templates; a rising rate means vocabulary and model drifted apart.
-- **Per-population decline reason distribution:** the early-warning input for fair-lending review.
 
 ## Risks
 
