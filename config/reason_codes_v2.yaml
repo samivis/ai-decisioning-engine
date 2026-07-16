@@ -1,0 +1,70 @@
+# Adverse-action reason code contract, version 2.
+# Demonstrates a governed vocabulary change: consumer text for
+# EXCESSIVE_OBLIGATIONS was revised and a new thin-file code was added,
+# each with sign-off. Decisions snapshotted under v1 still replay with
+# v1 text; only new decisions use this version.
+version: 2
+changelog:
+  - version: 1
+    date: 2026-07-16
+    change: Initial approved vocabulary for full_file and thin_file populations
+    approved_by: demo-compliance-signoff
+  - version: 2
+    date: 2026-07-16
+    change: >-
+      Revised EXCESSIVE_OBLIGATIONS consumer text for plain language;
+      added VARIABLE_INCOME_PATTERN for thin_file applicants scored on
+      cash-flow volatility signals.
+    approved_by: demo-compliance-signoff
+populations:
+  - full_file
+  - thin_file
+codes:
+  - id: INCOME_INSUFFICIENT
+    populations: [full_file, thin_file]
+    priority: 10
+    consumer_text: "Income insufficient for amount of credit requested"
+    maps_to:
+      features: [annual_income_estimate]
+  - id: EXCESSIVE_OBLIGATIONS
+    populations: [full_file, thin_file]
+    priority: 20
+    consumer_text: "Monthly obligations are too high relative to income"
+    maps_to:
+      features: [dti_proxy]
+  - id: DELINQUENT_OBLIGATIONS
+    populations: [full_file]
+    priority: 30
+    consumer_text: "Delinquent past or present credit obligations"
+    maps_to:
+      features: [delinquency_proxy]
+  - id: EMPLOYMENT_LENGTH
+    populations: [full_file, thin_file]
+    priority: 40
+    consumer_text: "Length of employment"
+    maps_to:
+      features: [employment_length_years]
+  - id: LIMITED_CREDIT_STRUCTURE
+    populations: [full_file]
+    priority: 50
+    consumer_text: "Limited credit experience based on number of open accounts"
+    maps_to:
+      features: [open_accounts]
+  - id: EXCESSIVE_NSF_ACTIVITY
+    populations: [full_file, thin_file]
+    priority: 5
+    consumer_text: "Recent history of insufficient funds in deposit account activity"
+    maps_to:
+      rules: [excessive_nsf]
+  - id: INSUFFICIENT_CASHFLOW_HISTORY
+    populations: [thin_file]
+    priority: 6
+    consumer_text: "Insufficient deposit account history to evaluate the application"
+    maps_to:
+      rules: [insufficient_history]
+  - id: VARIABLE_INCOME_PATTERN
+    populations: [thin_file]
+    priority: 25
+    consumer_text: "Income pattern too variable to support the requested credit"
+    maps_to:
+      rules: [high_volatility]

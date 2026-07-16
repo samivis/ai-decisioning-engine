@@ -1,0 +1,33 @@
+# Policy layer: population routing cutoffs and hard rules.
+# Versioned together with the reason contract via decision_config_version
+# (a hash manifest over this file plus the active reason_codes yaml), so a
+# policy edit can never silently change replay-verify semantics.
+version: 1
+populations:
+  full_file:
+    # probability_of_default thresholds
+    approve_below: 0.15
+    review_below: 0.30   # decline at or above this
+  thin_file:
+    approve_below: 0.12
+    review_below: 0.25
+routing:
+  # Applicants with fewer open obligations than this route to thin_file
+  thin_file_max_open_accounts: 2
+rules:
+  - id: income_unverifiable
+    description: No income signal detectable in transactions; route to manual review
+    when: "annual_income_estimate == 0"
+    effect: review
+  - id: excessive_nsf
+    description: Four or more NSF events in the last 90 days is a hard decline
+    when: "nsf_count_90d >= 4"
+    effect: decline
+  - id: insufficient_history
+    description: Thin-file applicants need at least 3 months of history
+    when: "population == 'thin_file' and months_of_history < 3"
+    effect: decline
+  - id: high_volatility
+    description: Extreme balance volatility for thin-file applicants
+    when: "population == 'thin_file' and balance_volatility >= 0.8"
+    effect: decline
