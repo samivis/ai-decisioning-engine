@@ -20,7 +20,9 @@ This repo is a small, honest, end-to-end demonstration of the architecture that 
 
 ## The problem, precisely
 
-Regulators have closed the escape hatches. CFPB Circular 2022-03 says creditors using complex algorithms still must give specific reasons; "the model decided" does not qualify. SR 11-7 model governance expects decisions to be reproducible under review. Meanwhile the industry's standard answer, post-hoc explainability (SHAP summaries, LLM-written explanations), solves a different problem: it explains, it does not defend.
+Regulators have closed the escape hatches. CFPB Circular 2022-03 states that a creditor "cannot justify noncompliance with ECOA and Regulation B's requirements based on the mere fact that the technology it employs to evaluate applications is too complicated or opaque to understand." Circular 2023-03 adds that creditors may not lean on checklist reasons that "do not specifically and accurately indicate the principal reason(s)." SR 11-7 model governance expects decisions to be documented well enough to stand up to independent review.
+
+The industry's working answer is to derive reason codes from post-hoc attribution methods; this is established practice, not a hypothetical (there are issued US patents on generating adverse-action reason codes from SHAP values, and vendors market the capability openly). What is contested is whether that mechanism is sufficient. The FinRegLab and Stanford empirical study of explainability tools in credit underwriting found that tool quality varies widely (the weakest tools performed no better than randomly chosen features), that compressing complex-model explanations into four reasons loses disproportionate information, and, most relevant here, that the study did not evaluate the step where attributions get mapped into the reasons lenders actually state on notices. That unexamined mapping step is where this project lives.
 
 The gap is between explanation and defensibility:
 
@@ -90,6 +92,17 @@ If this shipped as a product surface, the launch metrics are governance metrics:
 - **Dispute replay fidelity:** verify-mode pass rate across model retrains. The only acceptable number is 100%.
 - **Time to approve a new population:** days from model-ready to compliance-signed reason set. This is the metric the contract layer actually improves; at a lender this is weeks of manual mapping work.
 - **Per-population decline reason distribution:** the early-warning input for fair-lending review.
+
+## Assumptions this project makes, and their evidence
+
+Product claims deserve the same audit trail as decisions. These are the assumptions underneath this project, graded honestly.
+
+1. **Specific, accurate reasons are legally required; controlled vocabularies are the industry's control, not the law's text.** Reg B requires specific principal reasons (the official commentary notes more than four "is not likely to be helpful"; it is guidance, not a cap). Fixed approved vocabularies are how lenders make that requirement consistent and auditable at scale, because Legal can review 25 phrasings once but cannot review a million generated notices. Evidence: [Circular 2022-03](https://www.consumerfinance.gov/compliance/circulars/circular-2022-03-adverse-action-notification-requirements-in-connection-with-credit-decisions-based-on-complex-algorithms/), [Circular 2023-03](https://files.consumerfinance.gov/f/documents/cfpb_adverse_action_notice_circular_2023-09.pdf), [Reg B comment 9(b)(2)](https://www.consumerfinance.gov/rules-policy/regulations/1002/Interp-9).
+2. **Compliance sign-off, not model quality, gates underwriting launches.** First-hand: having run a cash-flow underwriting launch at a fintech lender, introducing a new data source meant enumerating every scenario in which it could decline someone and agreeing approved language before anything shipped. The mapping work sits on the launch's critical path; that is why it deserves architecture rather than spreadsheets.
+3. **Attribution-derived reason codes are established but contested practice.** Evidence: issued patents on SHAP-based adverse-action reason codes (e.g. [US 12,050,975](https://patents.google.com/patent/US12050975)), vendor materials marketing the capability, and the [FinRegLab/Stanford study](https://finreglab.org/research/machine-learning-explainability-fairness-insights-from-consumer-lending/) documenting wide tool-quality variance and leaving the attribution-to-reason-code mapping step unevaluated.
+4. **Getting notices wrong draws real enforcement.** [CFPB v. LendUp](https://www.consumerfinance.gov/about-us/newsroom/cfpb-shutters-lending-by-vc-backed-fintech-for-violating-agency-order/) (71,800+ adverse-action notices that failed to accurately state reasons; the company stopped lending) and the 2023 Citibank consent order (pretextual denial reasons).
+5. **Reproducibility under dispute is an inference, stated as one.** Reg B requires 25 months of record retention and the circulars require accuracy; SR 11-7 expects documentation sufficient for independent review. No public enforcement action yet turns on retraining-induced irreproducibility. This project treats replay as where those obligations converge as models start changing faster than disputes arrive, a design bet, not settled doctrine.
+6. **The differentiator is real but narrow.** I found no vendor marketing a governed reason-code contract (versioned vocabulary, per-population sets, sign-off gate) as a first-class product feature. Adjacent capability exists: FICO ships standardized score reason codes, and several vendors sell per-decision reason-code generation. The gap is the governance layer, not the codes themselves.
 
 ## Honest limitations
 
