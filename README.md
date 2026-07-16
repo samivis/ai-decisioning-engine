@@ -1,6 +1,6 @@
 # Explainable Credit Decisioning with FCRA-Grade Reason Codes
 
-A small, deliberately scoped working credit-decisioning engine, built around one question: when a machine learning model declines a loan applicant and the applicant disputes it 90 days later, after the model has been retrained twice, can you reproduce the original decision and its legally required reasons, exactly?
+A deliberately scoped working credit-decisioning engine, built around one question: when a machine learning model declines a loan applicant and the applicant disputes it 90 days later, after the model has been retrained twice, can you reproduce the original decision and its legally required reasons, exactly?
 
 **The hypothesis:** adverse-action reason codes are not a reporting feature; they are a governed contract that belongs in the decision path, with every decision snapshotted for exact replay. Lenders that move underwriting onto complex, frequently retrained models without that architecture will hit a compliance bottleneck that model quality cannot buy them out of. This repo tests the hypothesis by building the architecture end to end.
 
