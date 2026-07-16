@@ -121,7 +121,7 @@ code {
 
 /* ---- ranked reason list ---- */
 .reason-row {
-  display: flex; align-items: baseline; gap: 0.8rem;
+  display: flex; align-items: baseline; gap: 0.8rem; flex-wrap: wrap;
   padding: 0.7rem 0.95rem;
   border: 1px solid #e7e8ea; border-radius: 10px;
   margin-bottom: 0.45rem; background: #ffffff;
@@ -136,7 +136,7 @@ code {
   background: #f4f5f6; border: 1px solid #e7e8ea; border-radius: 6px;
   padding: 0.12em 0.5em; color: #43484e; white-space: nowrap;
 }
-.reason-text { font-size: 0.92rem; color: #1a1d21; }
+.reason-text { font-size: 0.92rem; color: #1a1d21; flex: 1 1 14ch; min-width: 12ch; }
 .reason-src { font-size: 0.7rem; color: #b0b5bc; text-transform: uppercase; letter-spacing: 0.1em; margin-left: auto; }
 </style>
 """

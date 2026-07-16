@@ -6,6 +6,8 @@ A working credit-decisioning engine built around one question: when an AI model 
 
 Built by Samidha Visai. Python, scikit-learn, pydantic, SQLite, Streamlit. Clone and run with zero API keys. Sources for every claim are in [References](#references).
 
+![Demo: decline, dispute replay, and verify](docs/demo.gif)
+
 ## The problem
 
 A lender adopts AI underwriting. Ninety days after a decline, the applicant disputes. Between then and now the model retrained, a feature was renamed, and compliance revised the approved reason wording. The lender must now produce the specific principal reasons for that decline, as they were, under ECOA Regulation B and FCRA.
