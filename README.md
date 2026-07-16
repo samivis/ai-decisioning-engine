@@ -1,6 +1,6 @@
 # Explainable Credit Decisioning with FCRA-Grade Reason Codes
 
-A working credit-decisioning engine built around one question: when an AI model declines a loan applicant and the applicant disputes it 90 days later, after the model has been retrained twice, can you reproduce the original decision and its legally required reasons, exactly?
+A small, deliberately scoped working credit-decisioning engine, built around one question: when an AI model declines a loan applicant and the applicant disputes it 90 days later, after the model has been retrained twice, can you reproduce the original decision and its legally required reasons, exactly?
 
 **The hypothesis:** adverse-action reason codes are not a reporting feature; they are a governed contract that belongs in the decision path, with every decision snapshotted for exact replay. Lenders that adopt AI underwriting without that architecture will hit a compliance bottleneck that model quality cannot buy them out of. This repo tests the hypothesis by building the architecture end to end.
 
@@ -20,8 +20,8 @@ Who feels this: credit risk leadership sponsors the model and the new population
 
 The assumptions driving this framing come from operating experience rather than public sources:
 
-- **Assumption 1: compliance sign-off, not model quality, gates underwriting launches.** When my team launched cash-flow underwriting at a fintech lender, declining on a new data source meant enumerating every scenario in which it could decline someone and agreeing approved language for each, through sign-off, before launch. No single step was the bottleneck; the enumeration, the wording rounds with Legal, and the coordination across data science, engineering, and compliance each added time, and they compounded on the launch's critical path. Credit risk leadership sponsored the launch; the veto sat with Compliance and Legal. This project assumes that experience generalizes.
-- **Assumption 2: the rule-layer version of this mapping is tractable by hand; the model-layer version is not.** Rules have enumerable decline scenarios. A model weighing many features into one score does not, which is why the mapping step needs architecture rather than spreadsheets as models take over more of the decision.
+- **Assumption 1: compliance sign-off, not model quality, gates underwriting launches.** At the fintech lender where I owned decisioning, any change to what fed our decisions reopened the decline-reason question: a new data source, an adjusted policy, a new underwriting program (cash-flow underwriting was the biggest). Each time, we enumerated the scenarios that could newly decline someone and agreed approved language for each, through sign-off, before launch. No single step was the bottleneck; the enumeration, the wording rounds with Legal, and the coordination across data science, engineering, and compliance compounded on the critical path. Credit risk leadership sponsored launches; the veto sat with Compliance and Legal. This project assumes that experience generalizes.
+- **Assumption 2: the rule-layer version of this mapping is tractable by hand; the model-layer version is a different kind of problem.** Rules have enumerable decline scenarios; that is what made my mapping work possible. A model weighing many features into one score does not enumerate, and the lender I worked at ran models at the core of underwriting, so a model-side answer existed somewhere in the machine. I did not own it and cannot vouch for how it worked, which is precisely why this project builds one in the open.
 - **Observed, not assumed: reconstruction demand already exists.** Audits sampled random declines and expected us to explain the exact reason and the mechanism behind it. We had our reason codes, and answering was still effortful, imperfect, gray-area work spread across compliance, engineering, and product. The snapshot-and-replay design in this repo is a direct answer to that experience: make the archaeology a query.
 
 ## Why now
@@ -133,7 +133,7 @@ Not legal advice, not a compliance product, and not trained on real consumer dat
 
 ## Why I built this
 
-I spent 2.5 years as the PM for credit decisioning and disclosures at a fintech lender, owning the shared decisioning platform through a company-wide cash-flow underwriting launch. When we started declining on cash-flow data, every one of those declines needed a reason we had never had to give before, and my job included mapping which data produced which approved reason, scenario by scenario, through sign-off. That work was tractable because rules are enumerable. The question that stayed with me: what happens to that work when a model, not a rule, drives the decline? This repo is a clean-room exploration of that question built entirely from public sources, with the hypothesis, evidence, and risks stated above. If you operate in this space and see where it breaks, I want to hear it.
+I spent 4 years at a fintech lender, the last 2.5 as the PM for credit decisioning and disclosures, owning the shared decisioning platform. Models were the bread and butter of our underwriting; my seat was the layer around them. Any time we ingested a new data source or adjusted our decisioning (the company-wide cash-flow underwriting launch being the biggest example), we had to reconsider the decline reasons: which scenarios could now decline someone, what approved language covered each, and getting that through sign-off before launch. I owned that mapping work on the rules-and-disclosures side; how the equivalent mapping worked inside the model layer was a part of the machine I never had to open, and I honestly do not know how solved it was. That is the question this repo explores from first principles: what does a defensible model-to-reason mapping look like when you have to build the whole thing? If you operate in this space and see where it breaks, I want to hear it.
 
 ## References
 
@@ -150,4 +150,4 @@ I spent 2.5 years as the PM for credit decisioning and disclosures at a fintech 
 
 ---
 
-**Samidha Visai** · [LinkedIn](https://www.linkedin.com/in/samidhavisai) · [practicesystems.ai](https://practicesystems.ai)
+**Samidha Visai** · [LinkedIn](https://www.linkedin.com/in/samidhavisai)

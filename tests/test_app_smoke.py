@@ -10,7 +10,7 @@ APP = Path(__file__).resolve().parents[1] / "app" / "streamlit_app.py"
 def test_app_boots_and_decides():
     at = AppTest.from_file(str(APP), default_timeout=30).run()
     assert not at.exception
-    assert at.title[0].value.startswith("Explainable credit decisioning")
+    assert at.title[0].value == "Credit Decisioning Engine"
 
     # The seeded dispute decision is selectable on a cold start.
     dispute_select = at.selectbox[1]

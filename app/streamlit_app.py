@@ -33,6 +33,8 @@ importlib.reload(_style)  # style.py edits hot-reload with the page
 CSS, display_row, humanize, reason_list, timeline = (
     _style.CSS, _style.display_row, _style.humanize, _style.reason_list, _style.timeline
 )
+contributions_table, rule_trace_table = _style.contributions_table, _style.rule_trace_table
+prose_block = _style.prose_block
 
 st.set_page_config(page_title="Explainable Credit Decisioning", page_icon="🏦", layout="wide")
 st.markdown(CSS, unsafe_allow_html=True)
@@ -46,11 +48,22 @@ def get_store() -> SnapshotStore:
 
 store = get_store()
 
-# masthead (styled into a tracked mono micro-header by CSS)
-st.title("Explainable credit decisioning.")
+# Friendly faces for the synthetic personas; raw keys stay the engine's truth
+PERSONAS = {
+    "healthy_full_file": "Avery (steady payroll, clean accounts)",
+    "distressed_full_file": "Jordan (overdrafts, late payments)",
+    "thin_file": "Sam (gig income, 4 months of history)",
+}
+
+
+def persona_label(key: str) -> str:
+    return PERSONAS.get(key, key)
+
+# masthead
+st.title("Credit Decisioning Engine")
 st.caption(
     "Governed adverse-action reason codes with dispute-grade replay. "
-    "Synthetic, calibrated demo personas; that is stated on purpose."
+    "Synthetic, calibrated demo personas, stated on purpose."
 )
 st.write("")
 
@@ -61,10 +74,25 @@ with left:
     st.markdown('<div class="micro">Decision instrument</div>', unsafe_allow_html=True)
 
     with st.form("decide_form", border=False):
-        persona = st.selectbox("Applicant", list_personas())
+        persona = st.selectbox(
+            "Applicant",
+            list_personas(),
+            format_func=persona_label,
+            help="Three synthetic applicants, each built to exercise different "
+                 "decline reasons. No real people, no real bank data.",
+        )
         col_a, col_b, col_c = st.columns([1, 1, 1.2])
-        model_version = col_a.radio("Model", ["v1", "v2"], horizontal=True, index=1)
-        contract_version = col_b.radio("Contract", [1, 2], horizontal=True, index=1)
+        model_version = col_a.radio(
+            "Scorecard version", ["v1", "v2"], horizontal=True, index=1,
+            help="The risk model. v2 is a retrain of v1; the point of the demo "
+                 "is that old decisions stay explainable after upgrades.",
+        )
+        contract_version = col_b.radio(
+            "Reason vocabulary", [1, 2], horizontal=True, index=1,
+            help="The approved list of decline-reason phrasings, versioned like "
+                 "code. v2 revised one phrasing and added one reason, each with "
+                 "compliance sign-off recorded in the file.",
+        )
         with col_c:
             st.write("")
             submitted = st.form_submit_button("Run decision", type="primary")
@@ -80,11 +108,12 @@ with left:
         st.markdown(display_row("Adverse Action Codes", aux="AWAITING DECISION"), unsafe_allow_html=True)
         st.markdown(
             '<div class="logic-card"><div class="micro">How to read this panel</div>'
-            "<p>Pick an applicant and run a decision. A decline produces up to four "
-            "ranked reason codes drawn from the approved, versioned vocabulary in "
-            "<code>config/reason_codes_v2.yaml</code>; each code shows the share of the "
-            "model's positive contribution mass it represents, or RULE when a hard "
-            "policy rule drove it. Every decision is snapshotted before it renders.</p></div>",
+            "<p>Pick an applicant and run a decision. A decline lists up to four "
+            "reasons, each drawn word-for-word from an approved, versioned phrasebook "
+            "(<code>config/reason_codes_v2.yaml</code>). The percentage next to a reason "
+            "is how much of the model's risk signal it carried; RULE means a hard "
+            "policy rule drove it outright. Every decision is sealed to a permanent "
+            "record before it is shown.</p></div>",
             unsafe_allow_html=True,
         )
     else:
@@ -92,7 +121,7 @@ with left:
         status_text = {"approve": "APPROVED", "decline": "DECLINED", "review": "REVIEW"}[record.decision]
         st.markdown(display_row("Adverse Action Codes", status_text=status_text, status_class=status_class), unsafe_allow_html=True)
         st.markdown(
-            f'<div class="micro">{record.persona} &nbsp;|&nbsp; {record.population} &nbsp;|&nbsp; '
+            f'<div class="micro">{persona_label(record.persona)} &nbsp;|&nbsp; {record.population.replace("_", " ")} &nbsp;|&nbsp; '
             f"decision <code>{record.decision_id}</code> &nbsp;|&nbsp; model <code>{record.score.model_version}</code> "
             f"&nbsp;|&nbsp; config <code>{record.decision_config_version}</code></div>",
             unsafe_allow_html=True,
@@ -110,8 +139,7 @@ with left:
             code_features = {c.id: (c.maps_to.features or []) for c in contract.codes}
             for rc in record.reason_codes:
                 if rc.source == "contribution":
-                    share = sum(feature_share.get(f, 0.0) for f in code_features.get(rc.code_id, []))
-                    rc._share_label = f"{round(share * 100)}%"
+                    rc._share = sum(feature_share.get(f, 0.0) for f in code_features.get(rc.code_id, []))
             st.markdown(reason_list(record.reason_codes), unsafe_allow_html=True)
 
             tab_gov, tab_naive = st.tabs(["Governed notice", "Naive LLM (the anti-pattern)"])
@@ -122,7 +150,7 @@ with left:
                     "against the contract; any failure falls back to pure templates."
                 )
             with tab_naive:
-                st.text(naive_llm_notice(record))
+                st.markdown(prose_block(naive_llm_notice(record)), unsafe_allow_html=True)
                 st.caption(
                     "Deliberately non-compliant: raw features in, fluent prose out. "
                     "True, unapproved, unranked, different every run."
@@ -148,16 +176,13 @@ with left:
                 f"Probability of default `{record.score.probability_of_default:.4f}` | "
                 f"artifact sha `{record.score.model_sha256[:12]}`"
             )
-            st.markdown("**Exact contributions (coefficient times standardized value):**")
-            st.table([
-                {"feature": c.feature, "value": round(c.value, 3), "contribution": round(c.contribution, 4)}
-                for c in record.score.contributions
-            ])
-            st.markdown("**Rule trace:**")
-            st.table([
-                {"rule": t.rule_id, "fired": t.fired, "effect": t.effect or "", "detail": t.detail}
-                for t in record.rule_trace
-            ])
+            st.markdown('<div class="micro">Exact contributions (coefficient times standardized value)</div>', unsafe_allow_html=True)
+            st.markdown(contributions_table(record.score.contributions), unsafe_allow_html=True)
+            st.markdown('<div class="micro">Rule trace</div>', unsafe_allow_html=True)
+            from decisioning.contract import load_policy
+
+            rule_effects = {r.id: r.effect for r in load_policy().rules}
+            st.markdown(rule_trace_table(record.rule_trace, rule_effects), unsafe_allow_html=True)
 
 # ---------------------------------------------------------------- right card
 with right:
@@ -166,13 +191,17 @@ with right:
 
     decisions = store.list_decisions()
     decision_ids = [d["decision_id"] for d in decisions]
-    chosen = st.selectbox("Decision under dispute", decision_ids)
+    chosen = st.selectbox(
+        "Decision under dispute", decision_ids,
+        help="Every decision run in this session appears here, plus one seeded "
+             "decision from last week. Pick one to pull its sealed record.",
+    )
     chosen_meta = next(d for d in decisions if d["decision_id"] == chosen)
 
     st.markdown(
         timeline([
-            ("Model retrained", "full_file:v2 | contract v2 active", False),
-            ("Contract revised", "reason_codes v2 | signed off", False),
+            ("Scorecard retrained", "full_file:v2 | vocabulary v2 active", False),
+            ("Reason vocabulary revised", "reason_codes v2 | signed off", False),
             (
                 "Original decision",
                 f"{chosen} | model {chosen_meta['model_version'].split(':')[-1]} | "
