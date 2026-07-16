@@ -36,7 +36,7 @@ One more assumption, stated as the design bet it is: **Assumption 3: exact repro
 
 ## The proposed solution
 
-The model proposes; a governed mapping disposes.
+The model surfaces signals; a governed mapping controls what reasons can be stated.
 
 ```mermaid
 flowchart LR
