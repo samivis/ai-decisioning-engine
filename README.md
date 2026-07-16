@@ -1,8 +1,8 @@
 # Explainable Credit Decisioning with FCRA-Grade Reason Codes
 
-A small, deliberately scoped working credit-decisioning engine, built around one question: when an AI model declines a loan applicant and the applicant disputes it 90 days later, after the model has been retrained twice, can you reproduce the original decision and its legally required reasons, exactly?
+A small, deliberately scoped working credit-decisioning engine, built around one question: when a machine learning model declines a loan applicant and the applicant disputes it 90 days later, after the model has been retrained twice, can you reproduce the original decision and its legally required reasons, exactly?
 
-**The hypothesis:** adverse-action reason codes are not a reporting feature; they are a governed contract that belongs in the decision path, with every decision snapshotted for exact replay. Lenders that adopt AI underwriting without that architecture will hit a compliance bottleneck that model quality cannot buy them out of. This repo tests the hypothesis by building the architecture end to end.
+**The hypothesis:** adverse-action reason codes are not a reporting feature; they are a governed contract that belongs in the decision path, with every decision snapshotted for exact replay. Lenders that move underwriting onto complex, frequently retrained models without that architecture will hit a compliance bottleneck that model quality cannot buy them out of. This repo tests the hypothesis by building the architecture end to end.
 
 Built by Samidha Visai. Python, scikit-learn, pydantic, SQLite, Streamlit. Clone and run with zero API keys. Sources for every claim are in [References](#references).
 
@@ -10,7 +10,7 @@ Built by Samidha Visai. Python, scikit-learn, pydantic, SQLite, Streamlit. Clone
 
 ## The problem
 
-A lender adopts AI underwriting. Ninety days after a decline, the applicant disputes. Between then and now the model retrained, a feature was renamed, and compliance revised the approved reason wording. The lender must now produce the specific principal reasons for that decline, as they were, under ECOA Regulation B and FCRA.
+A lender moves underwriting onto a machine learning model. Ninety days after a decline, the applicant disputes. Between then and now the model retrained, a feature was renamed, and compliance revised the approved reason wording. The lender must now produce the specific principal reasons for that decline, as they were, under ECOA Regulation B and FCRA.
 
 The regulatory floor here is explicit and recently reinforced. CFPB Circular 2022-03: a creditor "cannot justify noncompliance with ECOA and Regulation B's requirements based on the mere fact that the technology it employs to evaluate applications is too complicated or opaque to understand" [1]. Circular 2023-03: creditors may not rely on checklist reasons that "do not specifically and accurately indicate the principal reason(s)" [2]. Getting this wrong is not theoretical: LendUp issued 71,800+ adverse-action notices that failed to accurately state reasons and is no longer lending [5]; Citibank's 2023 consent order involved pretextual denial reasons on notices [6].
 
@@ -32,7 +32,7 @@ Three shifts converge:
 2. **Model change velocity is colliding with review cadence.** Upstart asked the CFPB to terminate its own no-action letter in 2022 because it wanted to change model variables faster than the review process allowed [10]. That tension between retraining speed and compliance review is exactly where reproducibility breaks.
 3. **Regulators have pre-committed.** The circulars [1][2] were issued before most of this tooling matured; the floor is set and enforcement precedent exists [5][6].
 
-One more assumption, stated as the design bet it is: **Assumption 3: exact reproducibility will be expected of AI decisioning.** The demand side already exists in static systems: audits sample past declines and expect the exact reason and mechanism (see the observed note above), Reg B requires 25 months of record retention [3], and SR 11-7 expects documentation sufficient for independent review [4]. The bet is about the supply side: once the deciding logic retrains weekly, answering an audit stops being hard and becomes impossible without decision snapshots. No public enforcement action yet turns on retraining-induced irreproducibility; this project bets that is a matter of time.
+One more assumption, stated as the design bet it is: **Assumption 3: exact reproducibility will be expected of model-driven decisioning.** The demand side already exists in static systems: audits sample past declines and expect the exact reason and mechanism (see the observed note above), Reg B requires 25 months of record retention [3], and SR 11-7 expects documentation sufficient for independent review [4]. The bet is about the supply side: once the deciding logic retrains weekly, answering an audit stops being hard and becomes impossible without decision snapshots. No public enforcement action yet turns on retraining-induced irreproducibility; this project bets that is a matter of time.
 
 ## The proposed solution
 
