@@ -126,6 +126,10 @@ tests/             the mapping layer and replay tests are the proof of craft
 docs/              ADRs: why not SHAP, why the notice is templated
 ```
 
+## Beyond adverse action
+
+Adverse action is the sharpest instance of this problem, not the only one. The same architecture applies wherever an automated decision must be defended under review after the model has moved on: SAR narratives in AML, disputed fraud declines and account freezes, and any decision an SR 11-7 reviewer asks you to re-derive. Reason codes are simply the version where the law states the requirement most precisely, which is why this reference implementation starts there.
+
 ## What this is not
 
 Not legal advice, not a compliance product, and not trained on real consumer data. FCRA adverse-action duties attach to decisions based on consumer reports; these synthetic fixtures are not consumer reports. This demonstrates a design pattern. Review outcomes route to a manual queue with no adverse-action notice, and counteroffer flows are out of scope.
