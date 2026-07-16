@@ -40,16 +40,16 @@ The model surfaces signals; a governed mapping controls what reasons can be stat
 
 ```mermaid
 flowchart LR
-    A[Applicant cash-flow data\nPlaid-shaped fixtures] --> B[Feature layer]
-    B --> C[Scorecard\nper population, versioned]
+    A[Applicant bank transactions\nsynthetic test data, Plaid API format] --> B[Feature extraction\nincome, expenses, account behavior]
+    B --> C[Risk model\nversioned scorecard per applicant type]
     C --> D[Policy rules\napprove / decline / review]
-    D --> E[Reason contract layer\nreason_codes.yaml, versioned, signed]
-    E --> F[Adverse-action notice\ntemplated slots, LLM-assisted, validated]
-    C -.-> G[(Decision snapshot\nmodel hash, config hash,\ninputs, trace, reasons, notice)]
+    D --> E[Reason mapping\napproved vocabulary, versioned, signed off]
+    E --> F[Adverse-action notice\napproved wording only, validated]
+    C -.-> G[(Decision record\neverything sealed before\nthe decision is shown)]
     D -.-> G
     E -.-> G
     F -.-> G
-    G --> H[Dispute replay\nread mode + verify mode]
+    G --> H[Dispute replay\nreturn the record, or re-derive and verify]
 ```
 
 The gap this closes is between explanation and defensibility:
