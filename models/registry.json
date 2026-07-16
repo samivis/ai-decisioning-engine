@@ -1,0 +1,54 @@
+{
+  "full_file:v1": {
+    "path": "full_file_v1.joblib",
+    "sha256": "93ace6128439ab6708c0059e2b574e45c94945c7175a7752254920153ba1395e",
+    "feature_schema_version": 1,
+    "features": [
+      "annual_income_estimate",
+      "dti_proxy",
+      "delinquency_proxy",
+      "employment_length_years",
+      "open_accounts"
+    ],
+    "trained_at": "2026-07-16T14:06:40.741323+00:00",
+    "data_provenance": "synthetic-standin"
+  },
+  "full_file:v2": {
+    "path": "full_file_v2.joblib",
+    "sha256": "0e876e97c967e54d49f903d6c3ca5df8a0d3900b2f64289cbfdab6e6e71e634f",
+    "feature_schema_version": 1,
+    "features": [
+      "annual_income_estimate",
+      "dti_proxy",
+      "delinquency_proxy",
+      "employment_length_years",
+      "open_accounts"
+    ],
+    "trained_at": "2026-07-16T14:06:40.754765+00:00",
+    "data_provenance": "synthetic-standin"
+  },
+  "thin_file:v1": {
+    "path": "thin_file_v1.joblib",
+    "sha256": "be62994f464f502ddc42d51b718d968e39b8d3180b75c7995b0af081a9c6c90b",
+    "feature_schema_version": 1,
+    "features": [
+      "annual_income_estimate",
+      "dti_proxy",
+      "employment_length_years"
+    ],
+    "trained_at": "2026-07-16T14:06:40.769333+00:00",
+    "data_provenance": "synthetic-standin"
+  },
+  "thin_file:v2": {
+    "path": "thin_file_v2.joblib",
+    "sha256": "f6fe59db72c2b95c5bd0dbb5ee3dcb5c9719123b796a52650d3f028c2390681c",
+    "feature_schema_version": 1,
+    "features": [
+      "annual_income_estimate",
+      "dti_proxy",
+      "employment_length_years"
+    ],
+    "trained_at": "2026-07-16T14:06:40.781219+00:00",
+    "data_provenance": "synthetic-standin"
+  }
+}
