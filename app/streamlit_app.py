@@ -103,6 +103,24 @@ with left:
                 persona, store, model_version=model_version, contract_version=contract_version
             )
 
+    def attach_shares(rec):
+        """Compute each contribution code's slice of the positive signal
+        mass from the record's stored contributions (works for live and
+        replayed records alike)."""
+        from decisioning.contract import load_contract
+
+        positive = [c for c in rec.score.contributions if c.contribution > 0]
+        total = sum(c.contribution for c in positive) or 1.0
+        feature_share = {c.feature: c.contribution / total for c in positive}
+        contract = load_contract(rec.contract_version)
+        code_features = {c.id: (c.maps_to.features or []) for c in contract.codes}
+        for rc in rec.reason_codes:
+            if rc.source == "contribution":
+                rc._share = sum(feature_share.get(f, 0.0) for f in code_features.get(rc.code_id, []))
+        return rec
+
+    st.session_state["attach_shares"] = attach_shares
+
     record = st.session_state.get("last_decision")
     if record is None:
         st.markdown(display_row("Adverse Action Codes", aux="AWAITING DECISION"), unsafe_allow_html=True)
@@ -128,18 +146,7 @@ with left:
         )
 
         if record.decision == "decline":
-            # compute each contribution code's share of positive contribution mass
-            positive = [c for c in record.score.contributions if c.contribution > 0]
-            total = sum(c.contribution for c in positive) or 1.0
-            feature_share = {c.feature: c.contribution / total for c in positive}
-            # attach share labels by walking the contract mapping through rank order
-            from decisioning.contract import load_contract
-
-            contract = load_contract(record.contract_version)
-            code_features = {c.id: (c.maps_to.features or []) for c in contract.codes}
-            for rc in record.reason_codes:
-                if rc.source == "contribution":
-                    rc._share = sum(feature_share.get(f, 0.0) for f in code_features.get(rc.code_id, []))
+            attach_shares(record)
             st.markdown(reason_list(record.reason_codes), unsafe_allow_html=True)
 
             tab_gov, tab_naive = st.tabs(["Governed notice", "Naive LLM (the anti-pattern)"])
@@ -232,6 +239,7 @@ with right:
             display_row("Governed Replay", aux=f"{replayed.decision.upper()} | AS DECIDED"),
             unsafe_allow_html=True,
         )
+        st.session_state["attach_shares"](replayed)
         st.markdown(reason_list(replayed.reason_codes), unsafe_allow_html=True)
         st.markdown(
             f'<p class="replay-note">Stored under model <code>{replayed.score.model_version}</code> '
