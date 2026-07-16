@@ -18,26 +18,26 @@ How does the industry square that floor with complex models? The established mec
 
 Who feels this: credit risk leadership sponsors the model and the new population, but the launch veto sits with Compliance and Legal, because in regulated lending nothing ships until the reason set and notices can be signed off. Any decisioning product sold into this market eventually meets that veto.
 
-Two structural assumptions drive this framing:
-
-- **Assumption 1: compliance sign-off, not model quality, gates underwriting launches.** Any change to what feeds a lending decision (a new data source, an adjusted policy, a new underwriting program) reopens the decline-reason question: which scenarios can newly decline someone, and what approved language covers each. That work runs through enumeration, legal wording review, and cross-team coordination, and it compounds on the launch's critical path. The enforcement record is what makes skipping it expensive [5][6]. This matches how I saw launches actually gate, and the project bets it generalizes across regulated lenders.
-- **Assumption 2: the rule-layer version of this mapping is tractable by hand; the model-layer version is a different kind of problem.** Rules have enumerable decline scenarios, so a person can map them to reasons and route the result through sign-off. A model weighing many features into one score does not enumerate; the translation step it needs instead is the ungoverned gap described above, and this project builds that step in the open.
-- **Reconstruction demand already exists.** Examinations and disputes sample past decisions and expect the specific reason and the mechanism behind it; Reg B requires 25 months of record retention [3] and SR 11-7 expects documentation sufficient for independent review [4]. Even in static systems, answering is manual archaeology across compliance, engineering, and product. The snapshot-and-replay design makes the archaeology a query.
-
 ## Why now
 
 Two shifts collide with the regulatory floor above:
 
-1. **Models are displacing rules in the decision itself**, so the tractable, enumerable mapping work becomes the different kind of problem in Assumption 2.
+1. **Models are displacing rules in the decision itself**, so the tractable, enumerable mapping work stops being enumerable at all.
 2. **Model change velocity is outrunning review cadence.** Upstart asked the CFPB to terminate its own no-action letter in 2022 because it wanted to change model variables faster than the review process allowed [10]. Retraining speed versus compliance review is exactly where reproducibility breaks.
 
-Which sets up the design bet: **Assumption 3: exact reproducibility will be expected of model-driven decisioning.** The demand side already exists (reconstruction, retention, and review expectations above); the bet is about supply. Once the deciding logic retrains weekly, answering a dispute or exam becomes impossible without decision snapshots. No public enforcement action yet turns on retraining-induced irreproducibility; this project bets that is a matter of time.
+## Assumptions
+
+The hypothesis rests on three assumptions, stated here so they can be checked:
+
+1. **Compliance sign-off, not model quality, gates underwriting launches.** Any change to what feeds a lending decision (a new data source, an adjusted policy, a new underwriting program) reopens the decline-reason question: which scenarios can newly decline someone, and what approved language covers each. That work runs through enumeration, legal wording review, and cross-team coordination, and it compounds on the launch's critical path; the enforcement record is what makes skipping it expensive [5][6]. This matches how I saw launches actually gate, and the project bets it generalizes.
+2. **The rule-layer version of reason mapping is tractable by hand; the model-layer version is a different kind of problem.** Rules have enumerable decline scenarios, so a person can map them to reasons and route the result through sign-off. A model weighing many features into one score does not enumerate; the translation step it needs instead is the ungoverned gap described in the problem, and this project builds that step in the open.
+3. **Exact reproducibility will be expected of model-driven decisioning.** The demand already exists: examinations and disputes sample past decisions and expect the specific reason and mechanism behind it, Reg B requires 25 months of record retention [3], and SR 11-7 expects documentation sufficient for independent review [4]. Even in static systems, answering is manual archaeology across compliance, engineering, and product. The bet is about supply: once the deciding logic retrains weekly, answering becomes impossible without decision snapshots. No public enforcement action yet turns on retraining-induced irreproducibility; this project bets that is a matter of time.
 
 ## Proposed impact
 
 If the hypothesis is right, the payoff is launch velocity and dispute posture, measurable as:
 
-- **Time to approve a new population:** days from model-ready to compliance-signed reason set. This is the metric the contract layer attacks; done manually this is the critical path (Assumption 1).
+- **Time to approve a new population:** days from model-ready to compliance-signed reason set. This is the metric the contract layer attacks; done manually this is the critical path (Assumption 1 below).
 - **Reason-code coverage rate:** share of declines with a complete mapped reason set. Anything under 100% is a launch blocker, which is why the unmappable-decline path throws instead of logging.
 - **Dispute replay fidelity:** verify-mode pass rate across model retrains. The only acceptable number is 100%.
 - **Notice validation failure rate:** how often governed generation falls back to templates; a rising rate means vocabulary and model drifted apart.
