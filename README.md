@@ -14,10 +14,13 @@ The regulatory floor here is explicit and recently reinforced. CFPB Circular 202
 
 How does the industry square that floor with complex models? The established mechanism is deriving reason codes from post-hoc attribution methods; there are issued US patents on generating adverse-action reason codes from SHAP values [7], and vendors market the capability openly [8]. Whether that mechanism is sufficient is genuinely contested. The FinRegLab/Stanford empirical study of explainability tools in credit found that tool quality varies enormously (the weakest performed no better than randomly chosen features), that compressing complex-model explanations into four reasons loses disproportionate information, and that it did not evaluate the step where attributions become the reasons lenders actually state on notices [9]. That unexamined mapping step is where this project lives.
 
-Two assumptions drive the problem framing, and they come from operating experience rather than public sources:
+Who feels this: credit risk leadership sponsors the model and the new population, but in my experience the launch veto belongs to Compliance and Legal, because nothing ships until they can sign the reason set and the notices. Any decisioning product sold into regulated lending eventually meets that veto.
 
-- **Assumption 1: compliance sign-off, not model quality, gates underwriting launches.** When my team launched cash-flow underwriting at a fintech lender, declining on a new data source meant enumerating every scenario in which it could decline someone and agreeing approved language for each, through sign-off, before launch. The mapping work sat on the launch's critical path. This project assumes that experience generalizes.
+The assumptions driving this framing come from operating experience rather than public sources:
+
+- **Assumption 1: compliance sign-off, not model quality, gates underwriting launches.** When my team launched cash-flow underwriting at a fintech lender, declining on a new data source meant enumerating every scenario in which it could decline someone and agreeing approved language for each, through sign-off, before launch. No single step was the bottleneck; the enumeration, the wording rounds with Legal, and the coordination across data science, engineering, and compliance each added time, and they compounded on the launch's critical path. Credit risk leadership sponsored the launch; the veto sat with Compliance and Legal. This project assumes that experience generalizes.
 - **Assumption 2: the rule-layer version of this mapping is tractable by hand; the model-layer version is not.** Rules have enumerable decline scenarios. A model weighing many features into one score does not, which is why the mapping step needs architecture rather than spreadsheets as models take over more of the decision.
+- **Observed, not assumed: reconstruction demand already exists.** Audits sampled random declines and expected us to explain the exact reason and the mechanism behind it. We had our reason codes, and answering was still effortful, imperfect, gray-area work spread across compliance, engineering, and product. The snapshot-and-replay design in this repo is a direct answer to that experience: make the archaeology a query.
 
 ## Why now
 
@@ -27,7 +30,7 @@ Three shifts converge:
 2. **Model change velocity is colliding with review cadence.** Upstart asked the CFPB to terminate its own no-action letter in 2022 because it wanted to change model variables faster than the review process allowed [10]. That tension between retraining speed and compliance review is exactly where reproducibility breaks.
 3. **Regulators have pre-committed.** The circulars [1][2] were issued before most of this tooling matured; the floor is set and enforcement precedent exists [5][6].
 
-One more assumption, stated as the design bet it is: **Assumption 3: dispute-grade reproducibility will be expected of AI decisioning.** Reg B requires 25 months of record retention [3], the circulars require accuracy, and SR 11-7 expects documentation sufficient for independent review [4]. No public enforcement action yet turns on retraining-induced irreproducibility; this project bets those obligations converge on exact replay as models change faster than disputes arrive.
+One more assumption, stated as the design bet it is: **Assumption 3: exact reproducibility will be expected of AI decisioning.** The demand side already exists in static systems: audits sample past declines and expect the exact reason and mechanism (see the observed note above), Reg B requires 25 months of record retention [3], and SR 11-7 expects documentation sufficient for independent review [4]. The bet is about the supply side: once the deciding logic retrains weekly, answering an audit stops being hard and becomes impossible without decision snapshots. No public enforcement action yet turns on retraining-induced irreproducibility; this project bets that is a matter of time.
 
 ## The proposed solution
 
@@ -54,7 +57,7 @@ The gap this closes is between explanation and defensibility:
 | Output | Plain-language summary of model behavior | Ranked reasons from an approved vocabulary |
 | Vocabulary | Whatever the explainer generates | Versioned, compliance-signed contract |
 | Under dispute | Regenerate and hope it matches | Replay the stored derivation, byte for byte |
-| Per population | One global explainer | Separate reason sets for thin-file vs full-file |
+| Input differences | One global explainer | Reasons scoped to the data actually used |
 | Failure mode | True but non-compliant | Unmappable decline fails loudly, pre-launch |
 
 An accurate explanation can still be a non-compliant adverse-action notice. That distinction is the product.
@@ -69,7 +72,7 @@ Three load-bearing design decisions, each with its tradeoff:
 
 Two supporting choices worth their own note:
 
-- **Populations are not an edge case.** A thin-file applicant scored on cash-flow data cannot be declined for "delinquent credit obligations" they never had. Thin-file applicants get their own reduced-feature scorecard, cutoffs, and reason set within the contract. The model also uses only features derivable from the applicant's own cash-flow data (no bureau-only features), so no reason can ever cite an input the applicant never supplied.
+- **Reasons follow the inputs, not the applicant.** The organizing principle is that valid decline reasons are determined by which data actually went into the decision. A thin-file applicant naturally supplies different inputs (no bureau history, shorter deposit records), so different reasons can validly fire for them; the "population" routing in this engine is how that input difference gets operationalized, not a claim that people should get categorically different vocabularies. Same principle, stricter form: the model uses only features derivable from the applicant's own cash-flow data (no bureau-only features), so no reason can ever cite an input the applicant never supplied.
 - **The LLM is caged, deliberately.** The demo contrasts a naive notice (LLM explains raw features: fluent, unapproved, different every run) with a governed one (LLM fills constrained slots from approved code text, validated by exact match, template fallback on any failure). The point is to show where generative AI fits in a regulated flow and where it does not. See `docs/adr-002-templated-notice.md`.
 
 ## Proposed impact
