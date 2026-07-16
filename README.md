@@ -147,3 +147,7 @@ I spent 2.5 years as the PM for credit decisioning and disclosures at a fintech 
 8. Zest AI, "Getting adverse action notices right for machine learning credit models." https://zest.ai/insights/getting-adverse-action-notices-right-for-machine-learning-credit-models
 9. FinRegLab, Blattner and Spiess (Stanford), "Machine Learning Explainability and Fairness: Insights from Consumer Lending" (2022, updated 2023). https://finreglab.org/research/machine-learning-explainability-fairness-insights-from-consumer-lending/
 10. CFPB, "CFPB Issues Order to Terminate Upstart No-Action Letter" (June 2022). https://www.consumerfinance.gov/about-us/newsroom/cfpb-issues-order-to-terminate-upstart-no-action-letter/
+
+---
+
+**Samidha Visai** · [LinkedIn](https://www.linkedin.com/in/samidhavisai) · [practicesystems.ai](https://practicesystems.ai)
