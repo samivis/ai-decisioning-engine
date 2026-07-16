@@ -7,3 +7,9 @@ data/lendingclub/
 *.egg-info/
 .streamlit/secrets.toml
 data/runtime/
+
+# Private planning material, never published
+HANDOFF.md
+context/
+PLAN.md
+TODOS.md

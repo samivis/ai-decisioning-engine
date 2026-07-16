@@ -46,7 +46,7 @@ class TestLoading:
 
     def test_policy_loads(self):
         policy = load_policy()
-        assert policy.populations["full_file"].approve_below == 0.15
+        assert policy.populations["full_file"].approve_below == 0.20
         assert len(policy.rules) == 4
 
 
@@ -75,7 +75,7 @@ class TestTamperedConfig:
         config_dir = _copy_config(tmp_path)
 
         def mutate(data):
-            data["populations"]["full_file"]["approve_below"] = 0.30
+            data["populations"]["full_file"]["approve_below"] = 0.35
 
         _rewrite(config_dir / "policy.yaml", mutate)
         with pytest.raises(ContractValidationError, match="approve_below"):

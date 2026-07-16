@@ -6,8 +6,8 @@ version: 1
 populations:
   full_file:
     # probability_of_default thresholds
-    approve_below: 0.15
-    review_below: 0.30   # decline at or above this
+    approve_below: 0.20
+    review_below: 0.35   # decline at or above this
   thin_file:
     approve_below: 0.12
     review_below: 0.25
@@ -24,8 +24,8 @@ rules:
     when: "nsf_count_90d >= 4"
     effect: decline
   - id: insufficient_history
-    description: Thin-file applicants need at least 3 months of history
-    when: "population == 'thin_file' and months_of_history < 3"
+    description: Thin-file applicants need at least 6 months of deposit history
+    when: "population == 'thin_file' and months_of_history < 6"
     effect: decline
   - id: high_volatility
     description: Extreme balance volatility for thin-file applicants
