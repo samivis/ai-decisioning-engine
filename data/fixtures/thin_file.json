@@ -1,0 +1,757 @@
+{
+  "accounts": [
+    {
+      "account_id": "acct-thin-checking",
+      "balances": {
+        "current": 2140.77
+      },
+      "subtype": "checking",
+      "type": "depository"
+    }
+  ],
+  "generated_by": "scripts/make_fixtures.py",
+  "persona": "thin_file",
+  "provenance": "synthetic, never captured from live API",
+  "transactions": [
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -264.94,
+      "date": "2026-03-05",
+      "name": "UBER EARNINGS",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-106c08426014"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -240.34,
+      "date": "2026-03-06",
+      "name": "UBER EARNINGS",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-20c3e55556c6"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": 60.18,
+      "date": "2026-03-08",
+      "name": "CORNER GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-979ebf1d2ef4"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": 99.46,
+      "date": "2026-03-14",
+      "name": "CORNER GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-293bde8e38fe"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -275.79,
+      "date": "2026-03-15",
+      "name": "DOORDASH DIRECT DEP",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-fbebbed28500"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -341.85,
+      "date": "2026-03-16",
+      "name": "UBER EARNINGS",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-67dd5ccb75f6"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": 120.0,
+      "date": "2026-03-18",
+      "name": "DISCOVER CREDIT CARD PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-fa1f14efb067"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -282.67,
+      "date": "2026-03-20",
+      "name": "DOORDASH DIRECT DEP",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-6c8ff6113d3a"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": 64.64,
+      "date": "2026-03-20",
+      "name": "CORNER GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-76878a0ece03"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -336.04,
+      "date": "2026-03-22",
+      "name": "INSTACART SHOPPER PAY",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-41585432469a"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -265.0,
+      "date": "2026-03-22",
+      "name": "DOORDASH DIRECT DEP",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-b80e9b5e0cad"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": 1500.0,
+      "date": "2026-03-25",
+      "name": "TRANSFER TO SAVINGS",
+      "personal_finance_category": {
+        "primary": "TRANSFER_OUT"
+      },
+      "transaction_id": "txn-77d6901488f3"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": 87.77,
+      "date": "2026-03-26",
+      "name": "CORNER GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-0abeb84f5e50"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -305.44,
+      "date": "2026-03-26",
+      "name": "DOORDASH DIRECT DEP",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-e7f135d91105"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -241.67,
+      "date": "2026-03-28",
+      "name": "UBER EARNINGS",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-df9382083292"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": 105.71,
+      "date": "2026-04-01",
+      "name": "CORNER GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-d012662ad994"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": 1100.0,
+      "date": "2026-04-03",
+      "name": "MAPLE ST RENT",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-bb6c59cc7df6"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -343.04,
+      "date": "2026-04-05",
+      "name": "INSTACART SHOPPER PAY",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-06159f93ca1c"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -344.4,
+      "date": "2026-04-05",
+      "name": "DOORDASH DIRECT DEP",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-66d07cd3b7cb"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -249.22,
+      "date": "2026-04-05",
+      "name": "INSTACART SHOPPER PAY",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-bdff95a73f45"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": 90.65,
+      "date": "2026-04-07",
+      "name": "CORNER GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-a2911b515409"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -247.1,
+      "date": "2026-04-09",
+      "name": "DOORDASH DIRECT DEP",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-4d4365dc102a"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -339.1,
+      "date": "2026-04-11",
+      "name": "UBER EARNINGS",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-e01654c137cb"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": 68.7,
+      "date": "2026-04-13",
+      "name": "CORNER GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-9e28c376a201"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -316.75,
+      "date": "2026-04-16",
+      "name": "UBER EARNINGS",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-dc2d8f74622f"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -336.86,
+      "date": "2026-04-16",
+      "name": "DOORDASH DIRECT DEP",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-ddecbc0dd006"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": 120.0,
+      "date": "2026-04-18",
+      "name": "DISCOVER CREDIT CARD PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-a1ca32069d3f"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -269.77,
+      "date": "2026-04-19",
+      "name": "UBER EARNINGS",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-4ac377a84c62"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": 77.53,
+      "date": "2026-04-19",
+      "name": "CORNER GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-ef1fc77f1b87"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -329.7,
+      "date": "2026-04-23",
+      "name": "INSTACART SHOPPER PAY",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-ffc45b1079ce"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -277.12,
+      "date": "2026-04-25",
+      "name": "DOORDASH DIRECT DEP",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-0a83799aaa30"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -293.54,
+      "date": "2026-04-25",
+      "name": "DOORDASH DIRECT DEP",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-5e1a9b9fbd96"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": 1500.0,
+      "date": "2026-04-25",
+      "name": "TRANSFER TO SAVINGS",
+      "personal_finance_category": {
+        "primary": "TRANSFER_OUT"
+      },
+      "transaction_id": "txn-6551c81b2a4f"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": 96.42,
+      "date": "2026-04-25",
+      "name": "CORNER GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-f23d82a597a8"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -328.84,
+      "date": "2026-04-30",
+      "name": "UBER EARNINGS",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-7bb48da08712"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -244.65,
+      "date": "2026-05-01",
+      "name": "UBER EARNINGS",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-2438df1f3471"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": 108.61,
+      "date": "2026-05-01",
+      "name": "CORNER GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-7380c0dd81e8"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": 1100.0,
+      "date": "2026-05-03",
+      "name": "MAPLE ST RENT",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-ff3f7accefa6"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -240.26,
+      "date": "2026-05-04",
+      "name": "DOORDASH DIRECT DEP",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-0c4fe9dd46a1"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": 72.76,
+      "date": "2026-05-07",
+      "name": "CORNER GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-4879535d2d9d"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -311.58,
+      "date": "2026-05-07",
+      "name": "INSTACART SHOPPER PAY",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-a7667defa011"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -308.13,
+      "date": "2026-05-08",
+      "name": "INSTACART SHOPPER PAY",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-1c80fbe54a97"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": 69.48,
+      "date": "2026-05-13",
+      "name": "CORNER GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-42cc6aaa9c19"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -257.85,
+      "date": "2026-05-17",
+      "name": "INSTACART SHOPPER PAY",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-08ef0e5a47a2"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -280.21,
+      "date": "2026-05-17",
+      "name": "INSTACART SHOPPER PAY",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-ca9bd71d5214"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": 120.0,
+      "date": "2026-05-18",
+      "name": "DISCOVER CREDIT CARD PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-9a7790a34eb8"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": 109.29,
+      "date": "2026-05-19",
+      "name": "CORNER GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-d429d622ae05"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -263.81,
+      "date": "2026-05-21",
+      "name": "UBER EARNINGS",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-1ad55e0155bb"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -317.37,
+      "date": "2026-05-24",
+      "name": "UBER EARNINGS",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-b15460673f95"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": 80.35,
+      "date": "2026-05-25",
+      "name": "CORNER GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-812a83a45642"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": 1500.0,
+      "date": "2026-05-25",
+      "name": "TRANSFER TO SAVINGS",
+      "personal_finance_category": {
+        "primary": "TRANSFER_OUT"
+      },
+      "transaction_id": "txn-a8df1c988fd5"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -272.88,
+      "date": "2026-05-25",
+      "name": "INSTACART SHOPPER PAY",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-c68535c85069"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -269.92,
+      "date": "2026-05-31",
+      "name": "INSTACART SHOPPER PAY",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-19e11902c557"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": 106.31,
+      "date": "2026-05-31",
+      "name": "CORNER GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-820de29a93f8"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -339.19,
+      "date": "2026-06-01",
+      "name": "UBER EARNINGS",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-3cd05cd48c06"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -295.09,
+      "date": "2026-06-01",
+      "name": "INSTACART SHOPPER PAY",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-48bfbcf8d00f"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": 1100.0,
+      "date": "2026-06-03",
+      "name": "MAPLE ST RENT",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-c0ec21f46d74"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -312.56,
+      "date": "2026-06-04",
+      "name": "UBER EARNINGS",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-5bffb07eb5fb"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": 77.38,
+      "date": "2026-06-06",
+      "name": "CORNER GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-c260e46058df"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -335.81,
+      "date": "2026-06-08",
+      "name": "UBER EARNINGS",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-629164b49aae"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": 99.36,
+      "date": "2026-06-12",
+      "name": "CORNER GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-7b26753b99fb"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -328.28,
+      "date": "2026-06-12",
+      "name": "DOORDASH DIRECT DEP",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-e9f90f4c9271"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -270.12,
+      "date": "2026-06-14",
+      "name": "DOORDASH DIRECT DEP",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-2f8c8fb2c3b5"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -328.14,
+      "date": "2026-06-15",
+      "name": "DOORDASH DIRECT DEP",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-c87e34071c15"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": 120.0,
+      "date": "2026-06-18",
+      "name": "DISCOVER CREDIT CARD PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-16829265ada6"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -295.07,
+      "date": "2026-06-18",
+      "name": "DOORDASH DIRECT DEP",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-7c9c4770a350"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": 64.2,
+      "date": "2026-06-18",
+      "name": "CORNER GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-d7e3f66d9c6e"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -314.59,
+      "date": "2026-06-20",
+      "name": "INSTACART SHOPPER PAY",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-5e9932aa1857"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": 76.68,
+      "date": "2026-06-24",
+      "name": "CORNER GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-bc999d4dd631"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": 1500.0,
+      "date": "2026-06-25",
+      "name": "TRANSFER TO SAVINGS",
+      "personal_finance_category": {
+        "primary": "TRANSFER_OUT"
+      },
+      "transaction_id": "txn-05d7cc3f7e67"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -328.74,
+      "date": "2026-06-25",
+      "name": "UBER EARNINGS",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-7bd5d80baead"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -266.95,
+      "date": "2026-06-28",
+      "name": "DOORDASH DIRECT DEP",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-e9c56469dd26"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": -281.3,
+      "date": "2026-06-29",
+      "name": "DOORDASH DIRECT DEP",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-2cb80fda9ede"
+    },
+    {
+      "account_id": "acct-thin-checking",
+      "amount": 101.32,
+      "date": "2026-06-30",
+      "name": "CORNER GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-883fa2640fc9"
+    }
+  ]
+}

@@ -1,0 +1,1567 @@
+{
+  "accounts": [
+    {
+      "account_id": "acct-distressed-checking",
+      "balances": {
+        "current": 412.18
+      },
+      "subtype": "checking",
+      "type": "depository"
+    }
+  ],
+  "generated_by": "scripts/make_fixtures.py",
+  "persona": "distressed_full_file",
+  "provenance": "synthetic, never captured from live API",
+  "transactions": [
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 184.01,
+      "date": "2025-11-04",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-30187adc26ab"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 124.05,
+      "date": "2025-11-06",
+      "name": "CITY POWER AND WATER",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-10d5c100bb98"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 210.63,
+      "date": "2025-11-07",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-55fae195f19b"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 318.0,
+      "date": "2025-11-09",
+      "name": "DRIVETIME AUTO LOAN PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-122064231187"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 223.4,
+      "date": "2025-11-10",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-4ea7dbdc77d4"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": -2000.0,
+      "date": "2025-11-13",
+      "name": "RIVERTON LOGISTICS PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-c5f39db139d9"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 198.72,
+      "date": "2025-11-13",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-f540c5c60a39"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 245.0,
+      "date": "2025-11-14",
+      "name": "ONEMAIN PERSONAL LOAN PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-ee430c28bf35"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 186.63,
+      "date": "2025-11-16",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-7e12f7ab9bab"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 182.67,
+      "date": "2025-11-19",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-77ddc75fba93"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 290.0,
+      "date": "2025-11-22",
+      "name": "CAPITAL ONE CREDIT CARD PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-37e339bce17c"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 237.1,
+      "date": "2025-11-22",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-71bb8dadc3e5"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 35.0,
+      "date": "2025-11-24",
+      "name": "LATE FEE",
+      "personal_finance_category": {
+        "primary": "BANK_FEES"
+      },
+      "transaction_id": "txn-7398bbc4d2b7"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 217.53,
+      "date": "2025-11-25",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-35fcffcadab6"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": -2000.0,
+      "date": "2025-11-27",
+      "name": "RIVERTON LOGISTICS PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-f0aceb6e1afe"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 238.76,
+      "date": "2025-11-28",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-76b3fc0399f4"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 228.85,
+      "date": "2025-12-01",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-353fc8a7a12b"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 1400.0,
+      "date": "2025-12-01",
+      "name": "PINE COURT RENT",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-998a702a4fb8"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 204.94,
+      "date": "2025-12-04",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-b8b2787cb79f"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 124.31,
+      "date": "2025-12-06",
+      "name": "CITY POWER AND WATER",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-75a9b793fd83"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 214.53,
+      "date": "2025-12-07",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-0e9e10db2be3"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 318.0,
+      "date": "2025-12-09",
+      "name": "DRIVETIME AUTO LOAN PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-30f52f2ea921"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 228.13,
+      "date": "2025-12-10",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-485b7ca7039e"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": -2000.0,
+      "date": "2025-12-11",
+      "name": "RIVERTON LOGISTICS PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-6807c3559857"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 234.49,
+      "date": "2025-12-13",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-9b2dba37d0c8"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 245.0,
+      "date": "2025-12-14",
+      "name": "ONEMAIN PERSONAL LOAN PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-e41f919c8a5a"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 198.03,
+      "date": "2025-12-16",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-c19bd092a3f2"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 199.83,
+      "date": "2025-12-19",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-5a4c6da18bfe"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 209.78,
+      "date": "2025-12-22",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-ad125fa4d32a"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 290.0,
+      "date": "2025-12-22",
+      "name": "CAPITAL ONE CREDIT CARD PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-ddd32cf4004e"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 35.0,
+      "date": "2025-12-24",
+      "name": "LATE FEE",
+      "personal_finance_category": {
+        "primary": "BANK_FEES"
+      },
+      "transaction_id": "txn-86f4ff0218ab"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": -2000.0,
+      "date": "2025-12-25",
+      "name": "RIVERTON LOGISTICS PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-46b304961cbd"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 189.31,
+      "date": "2025-12-25",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-951298a5f890"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 200.9,
+      "date": "2025-12-28",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-bf21edb6aa9c"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 210.32,
+      "date": "2025-12-31",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-fc8d7a8f1fb4"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 1400.0,
+      "date": "2026-01-01",
+      "name": "PINE COURT RENT",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-24a537bf0662"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 182.44,
+      "date": "2026-01-03",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-f91fde619262"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 128.38,
+      "date": "2026-01-06",
+      "name": "CITY POWER AND WATER",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-75cbcb5ea3be"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 195.79,
+      "date": "2026-01-06",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-d44e1bbadd6a"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": -2000.0,
+      "date": "2026-01-08",
+      "name": "RIVERTON LOGISTICS PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-14e8f251fc42"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 193.16,
+      "date": "2026-01-09",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-079a7aad5dc4"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 318.0,
+      "date": "2026-01-09",
+      "name": "DRIVETIME AUTO LOAN PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-8f790d456a9d"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 210.99,
+      "date": "2026-01-12",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-d9e53b155c9b"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 245.0,
+      "date": "2026-01-14",
+      "name": "ONEMAIN PERSONAL LOAN PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-c2da25f677e8"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 206.93,
+      "date": "2026-01-15",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-20c1e38f51b8"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 205.26,
+      "date": "2026-01-18",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-9e3bb39b5141"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 218.16,
+      "date": "2026-01-21",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-aa9547b2f8c0"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": -2000.0,
+      "date": "2026-01-22",
+      "name": "RIVERTON LOGISTICS PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-3f83d1e68e36"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 290.0,
+      "date": "2026-01-22",
+      "name": "CAPITAL ONE CREDIT CARD PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-41711be4ce92"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 35.0,
+      "date": "2026-01-24",
+      "name": "LATE FEE",
+      "personal_finance_category": {
+        "primary": "BANK_FEES"
+      },
+      "transaction_id": "txn-620ca4d94c97"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 208.17,
+      "date": "2026-01-24",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-b60e01ff6266"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 150.0,
+      "date": "2026-01-26",
+      "name": "MIDLAND COLLECTION AGENCY PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-67062ede9470"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 206.1,
+      "date": "2026-01-27",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-f4ac74f17b21"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 220.98,
+      "date": "2026-01-30",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-da8bec951df2"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 1400.0,
+      "date": "2026-02-01",
+      "name": "PINE COURT RENT",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-56ab9247d476"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 190.49,
+      "date": "2026-02-02",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-d6fa9b5930d8"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 218.94,
+      "date": "2026-02-05",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-14ae8ddb12da"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": -2000.0,
+      "date": "2026-02-05",
+      "name": "RIVERTON LOGISTICS PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-462fafac94c3"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 134.26,
+      "date": "2026-02-06",
+      "name": "CITY POWER AND WATER",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-3aafd3615fbe"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 194.94,
+      "date": "2026-02-08",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-c91978360e45"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 318.0,
+      "date": "2026-02-09",
+      "name": "DRIVETIME AUTO LOAN PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-6389e1bbc3b5"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 193.85,
+      "date": "2026-02-11",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-cf645863bf28"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 224.21,
+      "date": "2026-02-14",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-917a578ecb3b"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 245.0,
+      "date": "2026-02-14",
+      "name": "ONEMAIN PERSONAL LOAN PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-a0231384e5b2"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 204.69,
+      "date": "2026-02-17",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-ab6819158996"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": -2000.0,
+      "date": "2026-02-19",
+      "name": "RIVERTON LOGISTICS PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-297fa6416489"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 234.12,
+      "date": "2026-02-20",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-fad912bb0698"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 290.0,
+      "date": "2026-02-22",
+      "name": "CAPITAL ONE CREDIT CARD PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-9e809e677a8d"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 235.04,
+      "date": "2026-02-23",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-94671c009d03"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 35.0,
+      "date": "2026-02-24",
+      "name": "LATE FEE",
+      "personal_finance_category": {
+        "primary": "BANK_FEES"
+      },
+      "transaction_id": "txn-463e4d016805"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 150.0,
+      "date": "2026-02-26",
+      "name": "MIDLAND COLLECTION AGENCY PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-69bebefe7d14"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 194.68,
+      "date": "2026-02-26",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-74cc0d1a8507"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 1400.0,
+      "date": "2026-03-01",
+      "name": "PINE COURT RENT",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-ce4cae03f51d"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 184.37,
+      "date": "2026-03-01",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-fe5c9215ed4f"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 235.39,
+      "date": "2026-03-04",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-b309f78b58f4"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": -2000.0,
+      "date": "2026-03-05",
+      "name": "RIVERTON LOGISTICS PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-0b9a06fa4418"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 136.52,
+      "date": "2026-03-06",
+      "name": "CITY POWER AND WATER",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-36ed7ad8bedd"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 229.16,
+      "date": "2026-03-07",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-259c8d2cb3e3"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 318.0,
+      "date": "2026-03-09",
+      "name": "DRIVETIME AUTO LOAN PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-52f938f92c7d"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 237.35,
+      "date": "2026-03-10",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-18252eeeee8a"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 216.46,
+      "date": "2026-03-13",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-8c341a871dba"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 245.0,
+      "date": "2026-03-14",
+      "name": "ONEMAIN PERSONAL LOAN PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-ebf72d0d9c93"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 190.11,
+      "date": "2026-03-16",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-86936c08f4de"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": -2000.0,
+      "date": "2026-03-19",
+      "name": "RIVERTON LOGISTICS PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-2454699e02e8"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 183.92,
+      "date": "2026-03-19",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-5fa1b782cc9d"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 290.0,
+      "date": "2026-03-22",
+      "name": "CAPITAL ONE CREDIT CARD PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-83acd196aecb"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 225.48,
+      "date": "2026-03-22",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-bf61d8f58b7d"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 35.0,
+      "date": "2026-03-24",
+      "name": "LATE FEE",
+      "personal_finance_category": {
+        "primary": "BANK_FEES"
+      },
+      "transaction_id": "txn-02ab1e1b688a"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 227.41,
+      "date": "2026-03-25",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-a77a98a983af"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 150.0,
+      "date": "2026-03-26",
+      "name": "MIDLAND COLLECTION AGENCY PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-f405e2b612d4"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 228.61,
+      "date": "2026-03-28",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-6ce148e50aae"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 190.23,
+      "date": "2026-03-31",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-cd956bc53fae"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 1400.0,
+      "date": "2026-04-01",
+      "name": "PINE COURT RENT",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-388bf03e6702"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": -2000.0,
+      "date": "2026-04-02",
+      "name": "RIVERTON LOGISTICS PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-6b18c2910277"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 218.44,
+      "date": "2026-04-03",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-ebd20a3b5647"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 134.58,
+      "date": "2026-04-06",
+      "name": "CITY POWER AND WATER",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-4268d702ace4"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 233.94,
+      "date": "2026-04-06",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-44198dd2ad2b"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 227.67,
+      "date": "2026-04-09",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-0128b5b199e1"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 318.0,
+      "date": "2026-04-09",
+      "name": "DRIVETIME AUTO LOAN PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-14823c292edd"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 34.0,
+      "date": "2026-04-11",
+      "name": "NSF FEE",
+      "personal_finance_category": {
+        "primary": "BANK_FEES"
+      },
+      "transaction_id": "txn-09442cebfc97"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 216.86,
+      "date": "2026-04-12",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-8d2b8c7cdda5"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 245.0,
+      "date": "2026-04-14",
+      "name": "ONEMAIN PERSONAL LOAN PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-99c3af5b9262"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 222.01,
+      "date": "2026-04-15",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-1de0a34cdc1e"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": -2000.0,
+      "date": "2026-04-16",
+      "name": "RIVERTON LOGISTICS PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-dc1e8e333b6d"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 211.57,
+      "date": "2026-04-18",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-41e63ab73f7e"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 199.72,
+      "date": "2026-04-21",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-c4245fc07edf"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 290.0,
+      "date": "2026-04-22",
+      "name": "CAPITAL ONE CREDIT CARD PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-be795692a751"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 35.0,
+      "date": "2026-04-24",
+      "name": "LATE FEE",
+      "personal_finance_category": {
+        "primary": "BANK_FEES"
+      },
+      "transaction_id": "txn-d5965e30ca1e"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 210.89,
+      "date": "2026-04-24",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-f2f58c0ed950"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 150.0,
+      "date": "2026-04-26",
+      "name": "MIDLAND COLLECTION AGENCY PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-b8197abdae9d"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 228.26,
+      "date": "2026-04-27",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-763bc4cc0c03"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 34.0,
+      "date": "2026-04-29",
+      "name": "NSF FEE",
+      "personal_finance_category": {
+        "primary": "BANK_FEES"
+      },
+      "transaction_id": "txn-0da52658d9b4"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 204.87,
+      "date": "2026-04-30",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-ec3ad01f6466"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": -2000.0,
+      "date": "2026-04-30",
+      "name": "RIVERTON LOGISTICS PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-fbfdf93909d4"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 1400.0,
+      "date": "2026-05-01",
+      "name": "PINE COURT RENT",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-b3f714060e24"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 188.95,
+      "date": "2026-05-03",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-b8d42e66a84e"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 123.54,
+      "date": "2026-05-06",
+      "name": "CITY POWER AND WATER",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-5785280bf63d"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 184.03,
+      "date": "2026-05-06",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-681e3d48b095"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 229.88,
+      "date": "2026-05-09",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-04015a9c5a70"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 318.0,
+      "date": "2026-05-09",
+      "name": "DRIVETIME AUTO LOAN PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-91e5a2d6d801"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 235.62,
+      "date": "2026-05-12",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-d770268eb15c"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": -2000.0,
+      "date": "2026-05-14",
+      "name": "RIVERTON LOGISTICS PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-12c6b4ca3481"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 245.0,
+      "date": "2026-05-14",
+      "name": "ONEMAIN PERSONAL LOAN PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-ea0c59b4db6a"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 186.61,
+      "date": "2026-05-15",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-e41e512b960f"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 236.97,
+      "date": "2026-05-18",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-d96320eedcf4"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 226.31,
+      "date": "2026-05-21",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-9851da0ab76a"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 34.0,
+      "date": "2026-05-21",
+      "name": "NSF FEE",
+      "personal_finance_category": {
+        "primary": "BANK_FEES"
+      },
+      "transaction_id": "txn-a5b3031d1155"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 290.0,
+      "date": "2026-05-22",
+      "name": "CAPITAL ONE CREDIT CARD PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-2d690dec0642"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 225.94,
+      "date": "2026-05-24",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-4c169bddb4ce"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 35.0,
+      "date": "2026-05-24",
+      "name": "LATE FEE",
+      "personal_finance_category": {
+        "primary": "BANK_FEES"
+      },
+      "transaction_id": "txn-ad8d904fb31a"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 150.0,
+      "date": "2026-05-26",
+      "name": "MIDLAND COLLECTION AGENCY PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-5ade80133bce"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 194.98,
+      "date": "2026-05-27",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-ebbb004c82b2"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": -2000.0,
+      "date": "2026-05-28",
+      "name": "RIVERTON LOGISTICS PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-863ac2f2bc63"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 229.09,
+      "date": "2026-05-30",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-5e57ecd68c94"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 1400.0,
+      "date": "2026-06-01",
+      "name": "PINE COURT RENT",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-7a7fb7b0b254"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 233.67,
+      "date": "2026-06-02",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-4220e8861a34"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 197.8,
+      "date": "2026-06-05",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-0aa32ed5a0e7"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 133.79,
+      "date": "2026-06-06",
+      "name": "CITY POWER AND WATER",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-4f1967f962d0"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 230.38,
+      "date": "2026-06-08",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-f2b81c035254"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 34.0,
+      "date": "2026-06-09",
+      "name": "NSF FEE",
+      "personal_finance_category": {
+        "primary": "BANK_FEES"
+      },
+      "transaction_id": "txn-74e8e0bef0f7"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 318.0,
+      "date": "2026-06-09",
+      "name": "DRIVETIME AUTO LOAN PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-fde22228c84a"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 238.06,
+      "date": "2026-06-11",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-126efd1420cf"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": -2000.0,
+      "date": "2026-06-11",
+      "name": "RIVERTON LOGISTICS PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-32faa11ca88c"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 215.71,
+      "date": "2026-06-14",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-7ed8c3824a04"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 245.0,
+      "date": "2026-06-14",
+      "name": "ONEMAIN PERSONAL LOAN PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-a3ba2e731040"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 232.03,
+      "date": "2026-06-17",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-3ab436158c84"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 239.81,
+      "date": "2026-06-20",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-1c35acfb85ed"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 290.0,
+      "date": "2026-06-22",
+      "name": "CAPITAL ONE CREDIT CARD PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-d2d7cb7bebd5"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 34.0,
+      "date": "2026-06-22",
+      "name": "NSF FEE",
+      "personal_finance_category": {
+        "primary": "BANK_FEES"
+      },
+      "transaction_id": "txn-f87107ba5ee3"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 231.63,
+      "date": "2026-06-23",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-7df2724afc32"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 35.0,
+      "date": "2026-06-24",
+      "name": "LATE FEE",
+      "personal_finance_category": {
+        "primary": "BANK_FEES"
+      },
+      "transaction_id": "txn-eba9feed516a"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": -2000.0,
+      "date": "2026-06-25",
+      "name": "RIVERTON LOGISTICS PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-5eaf56d3665d"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 150.0,
+      "date": "2026-06-26",
+      "name": "MIDLAND COLLECTION AGENCY PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-87c2986967c4"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 184.33,
+      "date": "2026-06-26",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-e9269015e1b3"
+    },
+    {
+      "account_id": "acct-distressed-checking",
+      "amount": 180.98,
+      "date": "2026-06-29",
+      "name": "QUICKMART PURCHASE",
+      "personal_finance_category": {
+        "primary": "GENERAL_MERCHANDISE"
+      },
+      "transaction_id": "txn-af1f1e78d8d4"
+    }
+  ]
+}

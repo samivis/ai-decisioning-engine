@@ -1,0 +1,997 @@
+{
+  "accounts": [
+    {
+      "account_id": "acct-healthy-checking",
+      "balances": {
+        "current": 11250.44
+      },
+      "subtype": "checking",
+      "type": "depository"
+    }
+  ],
+  "generated_by": "scripts/make_fixtures.py",
+  "persona": "healthy_full_file",
+  "provenance": "synthetic, never captured from live API",
+  "transactions": [
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 152.07,
+      "date": "2025-11-05",
+      "name": "CITY POWER AND WATER",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-bf7e71f6015b"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 102.08,
+      "date": "2025-11-05",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-e564fd141467"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 352.0,
+      "date": "2025-11-10",
+      "name": "LAKESIDE AUTO LOAN PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-d6015f8075b5"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 218.0,
+      "date": "2025-11-12",
+      "name": "NAVIENT STUDENT LOAN PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-6cde503e780c"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 91.97,
+      "date": "2025-11-12",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-ed512961de6d"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": -3269.23,
+      "date": "2025-11-15",
+      "name": "ACME CORP PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-5baac2fe7b48"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 121.38,
+      "date": "2025-11-19",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-6dd84803d3ad"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 400.0,
+      "date": "2025-11-20",
+      "name": "CHASE CREDIT CARD PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-5afaa74d5b89"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 90.34,
+      "date": "2025-11-26",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-b5dc35076ca3"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 3900.0,
+      "date": "2025-11-27",
+      "name": "TRANSFER TO SAVINGS",
+      "personal_finance_category": {
+        "primary": "TRANSFER_OUT"
+      },
+      "transaction_id": "txn-05a2afbca6a5"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": -3269.23,
+      "date": "2025-11-29",
+      "name": "ACME CORP PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-66bb76de0916"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 1600.0,
+      "date": "2025-12-01",
+      "name": "OAKWOOD APTS RENT",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-c8cd13ff2569"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 110.53,
+      "date": "2025-12-03",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-7e83990ba4ce"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 140.52,
+      "date": "2025-12-05",
+      "name": "CITY POWER AND WATER",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-2ef2b1990d6b"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 352.0,
+      "date": "2025-12-10",
+      "name": "LAKESIDE AUTO LOAN PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-a54d4148a17e"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 133.65,
+      "date": "2025-12-10",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-af262442f3c4"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 218.0,
+      "date": "2025-12-12",
+      "name": "NAVIENT STUDENT LOAN PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-614e8644a1db"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": -3269.23,
+      "date": "2025-12-13",
+      "name": "ACME CORP PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-507b09b9f3f9"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 92.31,
+      "date": "2025-12-17",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-dc1ad795b44b"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 400.0,
+      "date": "2025-12-20",
+      "name": "CHASE CREDIT CARD PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-19e5c8461515"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 121.59,
+      "date": "2025-12-24",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-ab42e75c440b"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 3900.0,
+      "date": "2025-12-27",
+      "name": "TRANSFER TO SAVINGS",
+      "personal_finance_category": {
+        "primary": "TRANSFER_OUT"
+      },
+      "transaction_id": "txn-b4e2c16c6f71"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": -3269.23,
+      "date": "2025-12-27",
+      "name": "ACME CORP PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-eb4f8a6a9489"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 129.04,
+      "date": "2025-12-31",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-e0d4b469160e"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 1600.0,
+      "date": "2026-01-01",
+      "name": "OAKWOOD APTS RENT",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-ccbb12bd297b"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 135.25,
+      "date": "2026-01-05",
+      "name": "CITY POWER AND WATER",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-f41598fc0b69"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 128.15,
+      "date": "2026-01-07",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-2400b7b3584e"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 352.0,
+      "date": "2026-01-10",
+      "name": "LAKESIDE AUTO LOAN PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-467ae8940759"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": -3269.23,
+      "date": "2026-01-10",
+      "name": "ACME CORP PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-a78366c582c7"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 218.0,
+      "date": "2026-01-12",
+      "name": "NAVIENT STUDENT LOAN PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-29b25d55e1d1"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 107.82,
+      "date": "2026-01-14",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-de8f0514db5a"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 400.0,
+      "date": "2026-01-20",
+      "name": "CHASE CREDIT CARD PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-7114a856fb90"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 106.41,
+      "date": "2026-01-21",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-85f8209366f9"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": -3269.23,
+      "date": "2026-01-24",
+      "name": "ACME CORP PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-a65d09fa6999"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 3900.0,
+      "date": "2026-01-27",
+      "name": "TRANSFER TO SAVINGS",
+      "personal_finance_category": {
+        "primary": "TRANSFER_OUT"
+      },
+      "transaction_id": "txn-9edd8e2932f2"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 103.35,
+      "date": "2026-01-28",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-8e322afdb8d2"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 1600.0,
+      "date": "2026-02-01",
+      "name": "OAKWOOD APTS RENT",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-18553e7de108"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 95.79,
+      "date": "2026-02-04",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-f6ff0f9bd9b0"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 141.8,
+      "date": "2026-02-05",
+      "name": "CITY POWER AND WATER",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-293556a08d6f"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": -3269.23,
+      "date": "2026-02-07",
+      "name": "ACME CORP PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-ff90700df47f"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 352.0,
+      "date": "2026-02-10",
+      "name": "LAKESIDE AUTO LOAN PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-88862b52529e"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 124.86,
+      "date": "2026-02-11",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-88c1799d4d9f"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 218.0,
+      "date": "2026-02-12",
+      "name": "NAVIENT STUDENT LOAN PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-38ca5a686204"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 118.99,
+      "date": "2026-02-18",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-948788c6ce22"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 400.0,
+      "date": "2026-02-20",
+      "name": "CHASE CREDIT CARD PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-82525481adf2"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": -3269.23,
+      "date": "2026-02-21",
+      "name": "ACME CORP PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-4e14eb2e7e8e"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 111.45,
+      "date": "2026-02-25",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-cf40209c79ff"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 3900.0,
+      "date": "2026-02-27",
+      "name": "TRANSFER TO SAVINGS",
+      "personal_finance_category": {
+        "primary": "TRANSFER_OUT"
+      },
+      "transaction_id": "txn-50aa9a3bb84e"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 1600.0,
+      "date": "2026-03-01",
+      "name": "OAKWOOD APTS RENT",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-8bd23ba9b30e"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 130.63,
+      "date": "2026-03-04",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-6630e54ad239"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 146.46,
+      "date": "2026-03-05",
+      "name": "CITY POWER AND WATER",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-c067f3aabb69"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": -3269.23,
+      "date": "2026-03-07",
+      "name": "ACME CORP PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-f4235a916985"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 352.0,
+      "date": "2026-03-10",
+      "name": "LAKESIDE AUTO LOAN PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-726f26a31392"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 139.21,
+      "date": "2026-03-11",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-4e8f3a6f8f80"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 218.0,
+      "date": "2026-03-12",
+      "name": "NAVIENT STUDENT LOAN PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-bb0669bd8247"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 138.33,
+      "date": "2026-03-18",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-562b8859c46c"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 400.0,
+      "date": "2026-03-20",
+      "name": "CHASE CREDIT CARD PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-9567bd98cb3e"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": -3269.23,
+      "date": "2026-03-21",
+      "name": "ACME CORP PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-fa2d3b0b7bfd"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 97.62,
+      "date": "2026-03-25",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-5c99c817d99e"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 3900.0,
+      "date": "2026-03-27",
+      "name": "TRANSFER TO SAVINGS",
+      "personal_finance_category": {
+        "primary": "TRANSFER_OUT"
+      },
+      "transaction_id": "txn-f106a128e59e"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 119.73,
+      "date": "2026-04-01",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-b9a258421a3d"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 1600.0,
+      "date": "2026-04-01",
+      "name": "OAKWOOD APTS RENT",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-e28c194ec49a"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": -3269.23,
+      "date": "2026-04-04",
+      "name": "ACME CORP PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-11e69f138938"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 151.91,
+      "date": "2026-04-05",
+      "name": "CITY POWER AND WATER",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-61364edd30c3"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 125.82,
+      "date": "2026-04-08",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-6cb7be5c6973"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 352.0,
+      "date": "2026-04-10",
+      "name": "LAKESIDE AUTO LOAN PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-4e05dbc37d91"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 218.0,
+      "date": "2026-04-12",
+      "name": "NAVIENT STUDENT LOAN PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-af3fc0b259e9"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 118.65,
+      "date": "2026-04-15",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-5142c53e218c"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": -3269.23,
+      "date": "2026-04-18",
+      "name": "ACME CORP PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-2084eec6b6c5"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 400.0,
+      "date": "2026-04-20",
+      "name": "CHASE CREDIT CARD PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-01ec71c05f9c"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 139.54,
+      "date": "2026-04-22",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-b9226435db08"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 3900.0,
+      "date": "2026-04-27",
+      "name": "TRANSFER TO SAVINGS",
+      "personal_finance_category": {
+        "primary": "TRANSFER_OUT"
+      },
+      "transaction_id": "txn-c5d6a122a8ad"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 97.69,
+      "date": "2026-04-29",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-f00459f40d3a"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 1600.0,
+      "date": "2026-05-01",
+      "name": "OAKWOOD APTS RENT",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-a0883446b801"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": -3269.23,
+      "date": "2026-05-02",
+      "name": "ACME CORP PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-8d4e52d9383f"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 148.05,
+      "date": "2026-05-05",
+      "name": "CITY POWER AND WATER",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-c8121d8ef92f"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 118.58,
+      "date": "2026-05-06",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-8cdee59905d3"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 352.0,
+      "date": "2026-05-10",
+      "name": "LAKESIDE AUTO LOAN PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-392d610d28f2"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 218.0,
+      "date": "2026-05-12",
+      "name": "NAVIENT STUDENT LOAN PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-d28771dfb9ea"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 129.32,
+      "date": "2026-05-13",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-a8edd4f20938"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": -3269.23,
+      "date": "2026-05-16",
+      "name": "ACME CORP PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-361f40537633"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 400.0,
+      "date": "2026-05-20",
+      "name": "CHASE CREDIT CARD PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-6606114d344b"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 139.12,
+      "date": "2026-05-20",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-ae4b097da512"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 139.48,
+      "date": "2026-05-27",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-11c65599807d"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 3900.0,
+      "date": "2026-05-27",
+      "name": "TRANSFER TO SAVINGS",
+      "personal_finance_category": {
+        "primary": "TRANSFER_OUT"
+      },
+      "transaction_id": "txn-d192800e612b"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": -3269.23,
+      "date": "2026-05-30",
+      "name": "ACME CORP PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-4ce0b9ccc286"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 1600.0,
+      "date": "2026-06-01",
+      "name": "OAKWOOD APTS RENT",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-d63d137a1730"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 137.24,
+      "date": "2026-06-03",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-ae3d13d36ae2"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 142.92,
+      "date": "2026-06-05",
+      "name": "CITY POWER AND WATER",
+      "personal_finance_category": {
+        "primary": "RENT_AND_UTILITIES"
+      },
+      "transaction_id": "txn-b0889ebf26d4"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 352.0,
+      "date": "2026-06-10",
+      "name": "LAKESIDE AUTO LOAN PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-bb16864ccde2"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 138.74,
+      "date": "2026-06-10",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-d1e7b7a88db8"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 218.0,
+      "date": "2026-06-12",
+      "name": "NAVIENT STUDENT LOAN PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-26c7ad9269d2"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": -3269.23,
+      "date": "2026-06-13",
+      "name": "ACME CORP PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-99b7658a1831"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 104.48,
+      "date": "2026-06-17",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-358108b50823"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 400.0,
+      "date": "2026-06-20",
+      "name": "CHASE CREDIT CARD PAYMENT",
+      "personal_finance_category": {
+        "primary": "LOAN_PAYMENTS"
+      },
+      "transaction_id": "txn-6b28236199fd"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 135.65,
+      "date": "2026-06-24",
+      "name": "WHOLE HARVEST GROCERY",
+      "personal_finance_category": {
+        "primary": "FOOD_AND_DRINK"
+      },
+      "transaction_id": "txn-10f09f0ce45b"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": 3900.0,
+      "date": "2026-06-27",
+      "name": "TRANSFER TO SAVINGS",
+      "personal_finance_category": {
+        "primary": "TRANSFER_OUT"
+      },
+      "transaction_id": "txn-61d0055b5c5b"
+    },
+    {
+      "account_id": "acct-healthy-checking",
+      "amount": -3269.23,
+      "date": "2026-06-27",
+      "name": "ACME CORP PAYROLL",
+      "personal_finance_category": {
+        "primary": "INCOME"
+      },
+      "transaction_id": "txn-fedb81a1de70"
+    }
+  ]
+}
