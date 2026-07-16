@@ -133,7 +133,7 @@ Not legal advice, not a compliance product, and not trained on real consumer dat
 
 ## Why I built this
 
-I spent 4 years in fintech lending, the last 2.5 as the PM for credit decisioning and disclosures, where my work included mapping decision logic to approved adverse-action reasons and carrying that through compliance sign-off. This project explores the model-side version of that problem from first principles: what does a defensible model-to-reason mapping look like when you build the whole thing? Built clean-room from public sources, with the hypothesis, evidence, and risks stated above. If you operate in this space and see where it breaks, I want to hear it.
+I spent 4 years in fintech lending as the PM for credit decisioning and disclosures, where my work included mapping decision logic to approved adverse-action reasons and carrying that through compliance sign-off. This project explores the model-side version of that problem from first principles: what does a defensible model-to-reason mapping look like when you build the whole thing? Built clean-room from public sources, with the hypothesis, evidence, and risks stated above. If you operate in this space and see where it breaks, I want to hear it.
 
 ## References
 
