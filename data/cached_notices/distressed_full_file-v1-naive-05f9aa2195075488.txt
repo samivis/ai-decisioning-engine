@@ -1,0 +1,26 @@
+Dear [Applicant's Name],
+
+Thank you for your recent loan application. We appreciate your interest in our services. After a thorough review of your application, we regret to inform you that we are unable to approve your loan request at this time. 
+
+The decision was based on several key factors that indicate a high probability of default. Here are the main reasons for the decline:
+
+1. **Delinquency Proxy**: Your application showed a delinquency proxy score of 21.0. This score reflects a history of missed or late payments, which significantly increases the risk associated with lending to you. A higher delinquency score suggests that there may be challenges in managing debt obligations.
+
+2. **Debt-to-Income Ratio (DTI)**: Your DTI ratio is 1.0355, which indicates that your monthly debt payments are slightly higher than your monthly income. A high DTI ratio can signal that you may be over-leveraged, making it difficult to take on additional debt responsibly.
+
+3. **Non-Sufficient Funds (NSF) Count**: You have reported 5 instances of non-sufficient funds in the last 90 days. This suggests that there have been recent challenges in managing your bank account, which raises concerns about your financial stability.
+
+4. **Limited Credit History**: Your application indicates that you have only 8 months of credit history. A shorter credit history can make it difficult for lenders to assess your creditworthiness accurately.
+
+5. **Open Accounts**: You currently have 3 open accounts. While this is not inherently negative, it does contribute to the overall assessment of your credit profile, especially when combined with the other factors mentioned.
+
+While your estimated annual income is $52,142.86 and you have been employed for 4 years, these factors alone were not sufficient to offset the risks identified in your application.
+
+We encourage you to take steps to improve your financial profile, such as reducing outstanding debts, ensuring timely payments, and building a longer credit history. If you have any questions or would like to discuss your application further, please feel free to reach out.
+
+Thank you for your understanding, and we wish you the best in your financial endeavors.
+
+Sincerely,  
+[Your Name]  
+[Your Position]  
+[Your Company]  

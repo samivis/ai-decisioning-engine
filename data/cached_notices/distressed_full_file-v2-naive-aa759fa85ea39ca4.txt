@@ -1,0 +1,26 @@
+Dear [Applicant's Name],
+
+Thank you for your recent loan application. We appreciate your interest in our services. After a thorough review of your application, we regret to inform you that we are unable to approve your loan request at this time. 
+
+The decision was based on several key factors that contributed to a very high probability of default, which was calculated at approximately 99.9999994%. Here are the main reasons for this decision:
+
+1. **Delinquency Proxy (21.0)**: This metric indicates a history of missed or late payments. A higher delinquency score suggests a pattern of financial distress, which significantly impacts your creditworthiness.
+
+2. **Debt-to-Income Ratio (DTI Proxy of 1.0355)**: This ratio measures your monthly debt payments against your monthly income. A DTI above 1 indicates that your debt obligations exceed your income, which raises concerns about your ability to manage additional debt responsibly.
+
+3. **Open Accounts (3)**: While having open accounts is generally a positive sign, the overall context of your financial history is more critical. In conjunction with other factors, it does not sufficiently mitigate the risks identified.
+
+4. **Annual Income Estimate ($52,142.86)**: While your income is a positive aspect, it is not enough to offset the high risk indicated by your delinquency and DTI metrics.
+
+5. **Employment Length (4 years)**: A stable employment history is beneficial, but in this case, it did not significantly influence the overall risk assessment.
+
+6. **Recent Non-Sufficient Funds (NSF) Count (5 in 90 days)**: This indicates that there have been multiple instances where your account did not have enough funds to cover transactions, which raises concerns about your financial management.
+
+Given these factors, we believe that approving your loan would pose a significant risk. We encourage you to review your financial situation and consider steps to improve your creditworthiness, such as reducing outstanding debts, ensuring timely payments, and managing your finances more effectively.
+
+If you have any questions or would like to discuss this decision further, please feel free to reach out. We appreciate your understanding and wish you the best in your financial endeavors.
+
+Sincerely,  
+[Your Name]  
+[Your Position]  
+[Your Company]  

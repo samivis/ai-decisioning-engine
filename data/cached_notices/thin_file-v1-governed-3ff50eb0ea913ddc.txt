@@ -1,0 +1,24 @@
+[Your Company Name]  
+[Your Company Address]  
+[City, State, Zip Code]  
+[Date]  
+
+[Recipient Name]  
+[Recipient Address]  
+[City, State, Zip Code]  
+
+Dear [Recipient Name],  
+
+We regret to inform you that your application has been denied. The reasons for this decision are as follows:
+
+1. Insufficient deposit account history to evaluate the application  
+2. Excessive obligations in relation to income  
+3. Income insufficient for amount of credit requested  
+4. Length of employment  
+
+Thank you for your interest in our services. If you have any questions, please feel free to reach out.  
+
+Sincerely,  
+[Your Name]  
+[Your Title]  
+[Your Company Name]  

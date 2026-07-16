@@ -1,0 +1,24 @@
+[Your Company Name]  
+[Your Company Address]  
+[City, State, Zip Code]  
+[Date]  
+
+[Recipient Name]  
+[Recipient Address]  
+[City, State, Zip Code]  
+
+Dear [Recipient Name],  
+
+We regret to inform you that your application has been denied. Below are the reasons for this adverse action:  
+
+1. Recent history of insufficient funds in deposit account activity  
+2. Delinquent past or present credit obligations  
+3. Monthly obligations are too high relative to income  
+4. Income insufficient for amount of credit requested  
+
+Thank you for your understanding.  
+
+Sincerely,  
+[Your Name]  
+[Your Title]  
+[Your Company Name]  
